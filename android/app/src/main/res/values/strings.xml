@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">VazoClash</string>
+    <string name="widget_title">Active Upgrades</string>
+    <string name="widget_empty">No active upgrades</string>
+</resources>

@@ -1,0 +1,4301 @@
+{
+  "currentProfile": {
+    "tag": "#LU8QU99L0",
+    "playerName": "Chief #LU8QU99L0",
+    "townHallLevel": 18,
+    "importedAt": "2026-11-21T09:05:46.042Z",
+    "timestamp": 1795249025,
+    "totalBuildings": 97,
+    "totalTraps": 48,
+    "totalHeroes": 6,
+    "totalWalls": 325,
+    "buildings": [
+      {
+        "instanceId": "bldg_mortar_15_mi147",
+        "buildingId": "mortar",
+        "name": "Mortar",
+        "category": "Defense",
+        "level": 15,
+        "quantity": 1,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Mortar15B.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/1/12/Mortar15B.png/revision/latest?cb=20230522074251",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000013,
+          "lvl": 15,
+          "gear_up": 1
+        }
+      },
+      {
+        "instanceId": "bldg_wizard-tower_16_z61a5",
+        "buildingId": "wizard-tower",
+        "name": "Wizard Tower",
+        "category": "Defense",
+        "level": 16,
+        "quantity": 1,
+        "timer": 279260,
+        "upgradeEndTimestamp": 1795531206041,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Wizard Tower16.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/7/7c/Wizard_Tower16.png/revision/latest?cb=20231213084004",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000011,
+          "lvl": 16,
+          "timer": 279260
+        }
+      },
+      {
+        "instanceId": "bldg_army-camp_13_i97mu",
+        "buildingId": "army-camp",
+        "name": "Army Camp",
+        "category": "Army",
+        "level": 13,
+        "quantity": 1,
+        "timer": 818122,
+        "upgradeEndTimestamp": 1796070068041,
+        "footprint": {
+          "width": 5,
+          "height": 5
+        },
+        "image": {
+          "filename": "Army Camp13.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/d/d3/Army_Camp13.png/revision/latest?cb=20260102090129",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000000,
+          "lvl": 13,
+          "timer": 818122,
+          "helper_recurrent": true
+        }
+      },
+      {
+        "instanceId": "bldg_wizard-tower_16_503wx",
+        "buildingId": "wizard-tower",
+        "name": "Wizard Tower",
+        "category": "Defense",
+        "level": 16,
+        "quantity": 1,
+        "timer": 326516,
+        "upgradeEndTimestamp": 1795578462041,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Wizard Tower16.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/7/7c/Wizard_Tower16.png/revision/latest?cb=20231213084004",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000011,
+          "lvl": 16,
+          "timer": 326516,
+          "extra": true
+        }
+      },
+      {
+        "instanceId": "bldg_x-bow_12_14msb",
+        "buildingId": "x-bow",
+        "name": "X-Bow",
+        "category": "Defense",
+        "level": 12,
+        "quantity": 1,
+        "timer": 576102,
+        "upgradeEndTimestamp": 1795828048041,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "X-Bow12 Ground.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/6/68/X-Bow12_Ground.png/revision/latest?cb=20260503184414",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000021,
+          "lvl": 12,
+          "timer": 576102
+        }
+      },
+      {
+        "instanceId": "bldg_wizard-tower_16_5uzum",
+        "buildingId": "wizard-tower",
+        "name": "Wizard Tower",
+        "category": "Defense",
+        "level": 16,
+        "quantity": 1,
+        "timer": 279274,
+        "upgradeEndTimestamp": 1795531220041,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Wizard Tower16.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/7/7c/Wizard_Tower16.png/revision/latest?cb=20231213084004",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000011,
+          "lvl": 16,
+          "timer": 279274
+        }
+      },
+      {
+        "instanceId": "bldg_crafting-station_1_b01m7",
+        "buildingId": "crafting-station",
+        "name": "Crafting Station",
+        "category": "Defense",
+        "level": 1,
+        "quantity": 1,
+        "footprint": {
+          "width": 2,
+          "height": 2
+        },
+        "raw": {
+          "data": 1000097,
+          "types": [
+            {
+              "data": 103000011,
+              "modules": [
+                {
+                  "data": 102000033,
+                  "lvl": 1
+                },
+                {
+                  "data": 102000034,
+                  "lvl": 1
+                },
+                {
+                  "data": 102000035,
+                  "lvl": 1
+                }
+              ]
+            },
+            {
+              "data": 103000012,
+              "modules": [
+                {
+                  "data": 102000036,
+                  "lvl": 1
+                },
+                {
+                  "data": 102000037,
+                  "lvl": 1
+                },
+                {
+                  "data": 102000038,
+                  "lvl": 1
+                }
+              ]
+            },
+            {
+              "data": 103000013,
+              "modules": [
+                {
+                  "data": 102000039,
+                  "lvl": 1
+                },
+                {
+                  "data": 102000040,
+                  "lvl": 1
+                },
+                {
+                  "data": 102000041,
+                  "lvl": 1
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "instanceId": "bldg_squad-barracks_0_n4q4z",
+        "buildingId": "squad-barracks",
+        "name": "Squad Barracks",
+        "category": "Army",
+        "level": 0,
+        "quantity": 1,
+        "timer": 29546,
+        "upgradeEndTimestamp": 1795281492041,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "raw": {
+          "data": 1000106,
+          "lvl": 0,
+          "timer": 29546
+        }
+      },
+      {
+        "instanceId": "bldg_army-camp_14_61494",
+        "buildingId": "army-camp",
+        "name": "Army Camp",
+        "category": "Army",
+        "level": 14,
+        "quantity": 3,
+        "footprint": {
+          "width": 5,
+          "height": 5
+        },
+        "image": {
+          "filename": "Army Camp14.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/c/c6/Army_Camp14.png/revision/latest?cb=20260425143241",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000000,
+          "lvl": 14,
+          "cnt": 3
+        }
+      },
+      {
+        "instanceId": "bldg_town-hall_18_qgpyn",
+        "buildingId": "town-hall",
+        "name": "Town Hall",
+        "category": "Defense",
+        "level": 18,
+        "quantity": 1,
+        "footprint": {
+          "width": 4,
+          "height": 4
+        },
+        "image": {
+          "filename": "Town_Hall18.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/7/76/Town_Hall18.png/revision/latest?cb=20251117162127",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000001,
+          "lvl": 18,
+          "cnt": 1
+        }
+      },
+      {
+        "instanceId": "bldg_elixir-collector_16_8rlkg",
+        "buildingId": "elixir-collector",
+        "name": "Elixir Collector",
+        "category": "Resource",
+        "level": 16,
+        "quantity": 7,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Elixir Collector16.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/b/b9/Elixir_Collector16.png/revision/latest?cb=20251027021007",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000002,
+          "lvl": 16,
+          "cnt": 7
+        }
+      },
+      {
+        "instanceId": "bldg_elixir-storage_17_0xr8u",
+        "buildingId": "elixir-storage",
+        "name": "Elixir Storage",
+        "category": "Resource",
+        "level": 17,
+        "quantity": 1,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Elixir Storage17.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/9/94/Elixir_Storage17.png/revision/latest?cb=20231213084959",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000003,
+          "lvl": 17,
+          "cnt": 1
+        }
+      },
+      {
+        "instanceId": "bldg_elixir-storage_18_iwxma",
+        "buildingId": "elixir-storage",
+        "name": "Elixir Storage",
+        "category": "Resource",
+        "level": 18,
+        "quantity": 3,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Elixir Storage18.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/c/cc/Elixir_Storage18.png/revision/latest?cb=20241124022807",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000003,
+          "lvl": 18,
+          "cnt": 3
+        }
+      },
+      {
+        "instanceId": "bldg_gold-mine_16_vj3bv",
+        "buildingId": "gold-mine",
+        "name": "Gold Mine",
+        "category": "Resource",
+        "level": 16,
+        "quantity": 6,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Gold Mine16.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/5/58/Gold_Mine16.png/revision/latest?cb=20251027021112",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000004,
+          "lvl": 16,
+          "cnt": 6
+        }
+      },
+      {
+        "instanceId": "bldg_gold-mine_17_yss9c",
+        "buildingId": "gold-mine",
+        "name": "Gold Mine",
+        "category": "Resource",
+        "level": 17,
+        "quantity": 1,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Gold Mine17.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/7/71/Gold_Mine17.png/revision/latest?cb=20251118165804",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000004,
+          "lvl": 17,
+          "cnt": 1
+        }
+      },
+      {
+        "instanceId": "bldg_gold-storage_18_29npd",
+        "buildingId": "gold-storage",
+        "name": "Gold Storage",
+        "category": "Resource",
+        "level": 18,
+        "quantity": 4,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Gold Storage18.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/b/b7/Gold_Storage18.png/revision/latest?cb=20241124022808",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000005,
+          "lvl": 18,
+          "cnt": 4
+        }
+      },
+      {
+        "instanceId": "bldg_barracks_19_xxqgg",
+        "buildingId": "barracks",
+        "name": "Barracks",
+        "category": "Army",
+        "level": 19,
+        "quantity": 1,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Barracks19.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/4/41/Barracks19.png/revision/latest?cb=20260222202424",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000006,
+          "lvl": 19,
+          "cnt": 1
+        }
+      },
+      {
+        "instanceId": "bldg_laboratory_16_gn5xj",
+        "buildingId": "laboratory",
+        "name": "Laboratory",
+        "category": "Army",
+        "level": 16,
+        "quantity": 1,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Laboratory16.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/7/7d/Laboratory16.png/revision/latest?cb=20260222204504",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000007,
+          "lvl": 16,
+          "cnt": 1
+        }
+      },
+      {
+        "instanceId": "bldg_archer-tower_21_c8gbz",
+        "buildingId": "archer-tower",
+        "name": "Archer Tower",
+        "category": "Defense",
+        "level": 21,
+        "quantity": 2,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Archer Tower21.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/f/fa/Archer_Tower21.png/revision/latest?cb=20221223040422",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000009,
+          "lvl": 21,
+          "cnt": 2
+        }
+      },
+      {
+        "instanceId": "bldg_wall_19_oc7tp",
+        "buildingId": "wall",
+        "name": "Wall",
+        "category": "Defense",
+        "level": 19,
+        "quantity": 325,
+        "footprint": {
+          "width": 1,
+          "height": 1
+        },
+        "image": {
+          "filename": "Wall19.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/4/4d/Wall19.png/revision/latest?cb=20260226043604",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000010,
+          "lvl": 19,
+          "cnt": 325
+        }
+      },
+      {
+        "instanceId": "bldg_wizard-tower_8_lnjud",
+        "buildingId": "wizard-tower",
+        "name": "Wizard Tower",
+        "category": "Defense",
+        "level": 8,
+        "quantity": 1,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Wizard Tower8.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/a/ad/Wizard_Tower8.png/revision/latest?cb=20230521052705",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000011,
+          "lvl": 8,
+          "cnt": 1
+        }
+      },
+      {
+        "instanceId": "bldg_wizard-tower_15_4sjq8",
+        "buildingId": "wizard-tower",
+        "name": "Wizard Tower",
+        "category": "Defense",
+        "level": 15,
+        "quantity": 1,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Wizard Tower15.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/a/a4/Wizard_Tower15.png/revision/latest?cb=20230521052811",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000011,
+          "lvl": 15,
+          "cnt": 1
+        }
+      },
+      {
+        "instanceId": "bldg_wizard-tower_16_t5vpq",
+        "buildingId": "wizard-tower",
+        "name": "Wizard Tower",
+        "category": "Defense",
+        "level": 16,
+        "quantity": 1,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Wizard Tower16.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/7/7c/Wizard_Tower16.png/revision/latest?cb=20231213084004",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000011,
+          "lvl": 16,
+          "cnt": 1
+        }
+      },
+      {
+        "instanceId": "bldg_air-defense_15_3ledx",
+        "buildingId": "air-defense",
+        "name": "Air Defense",
+        "category": "Defense",
+        "level": 15,
+        "quantity": 4,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Air Defense15.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/7/7d/Air_Defense15.png/revision/latest?cb=20241122153132",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000012,
+          "lvl": 15,
+          "cnt": 4
+        }
+      },
+      {
+        "instanceId": "bldg_mortar_15_pwxqz",
+        "buildingId": "mortar",
+        "name": "Mortar",
+        "category": "Defense",
+        "level": 15,
+        "quantity": 3,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Mortar15B.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/1/12/Mortar15B.png/revision/latest?cb=20230522074251",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000013,
+          "lvl": 15,
+          "cnt": 3
+        }
+      },
+      {
+        "instanceId": "bldg_clan-castle_14_z06p4",
+        "buildingId": "clan-castle",
+        "name": "Clan Castle",
+        "category": "Resource",
+        "level": 14,
+        "quantity": 1,
+        "footprint": {
+          "width": 4,
+          "height": 4
+        },
+        "image": {
+          "filename": "Clan Castle14.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/d/db/Clan_Castle14.png/revision/latest?cb=20251115150133",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000014,
+          "lvl": 14,
+          "cnt": 1
+        }
+      },
+      {
+        "instanceId": "bldg_builder-s-hut_6_qdbku",
+        "buildingId": "builder-s-hut",
+        "name": "Builder's Hut",
+        "category": "Defense",
+        "level": 6,
+        "quantity": 5,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Builders Hut6.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/0/0b/Builders_Hut6.png/revision/latest?cb=20240418094935",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000015,
+          "lvl": 6,
+          "cnt": 5
+        }
+      },
+      {
+        "instanceId": "bldg_hidden-tesla_14_jszpk",
+        "buildingId": "hidden-tesla",
+        "name": "Hidden Tesla",
+        "category": "Defense",
+        "level": 14,
+        "quantity": 2,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Hidden Tesla14.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/f/f1/Hidden_Tesla14.png/revision/latest?cb=20230613002325",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000019,
+          "lvl": 14,
+          "cnt": 2
+        }
+      },
+      {
+        "instanceId": "bldg_hidden-tesla_15_zuuv1",
+        "buildingId": "hidden-tesla",
+        "name": "Hidden Tesla",
+        "category": "Defense",
+        "level": 15,
+        "quantity": 3,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Hidden Tesla15.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/9/9e/Hidden_Tesla15.png/revision/latest?cb=20240303014818",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000019,
+          "lvl": 15,
+          "cnt": 3
+        }
+      },
+      {
+        "instanceId": "bldg_spell-factory_8_s4e9s",
+        "buildingId": "spell-factory",
+        "name": "Spell Factory",
+        "category": "Army",
+        "level": 8,
+        "quantity": 1,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Spell Factory8.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/b/b7/Spell_Factory8.png/revision/latest?cb=20241129150915",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000020,
+          "lvl": 8,
+          "cnt": 1
+        }
+      },
+      {
+        "instanceId": "bldg_x-bow_12_0y4k4",
+        "buildingId": "x-bow",
+        "name": "X-Bow",
+        "category": "Defense",
+        "level": 12,
+        "quantity": 3,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "X-Bow12 Ground.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/6/68/X-Bow12_Ground.png/revision/latest?cb=20260503184414",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000021,
+          "lvl": 12,
+          "cnt": 3
+        }
+      },
+      {
+        "instanceId": "bldg_dark-elixir-drill_10_mfho0",
+        "buildingId": "dark-elixir-drill",
+        "name": "Dark Elixir Drill",
+        "category": "Resource",
+        "level": 10,
+        "quantity": 3,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Dark Elixir Drill10.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/1/10/Dark_Elixir_Drill10.png/revision/latest?cb=20251118170248",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000023,
+          "lvl": 10,
+          "cnt": 3
+        }
+      },
+      {
+        "instanceId": "bldg_dark-elixir-storage_12_m4h98",
+        "buildingId": "dark-elixir-storage",
+        "name": "Dark Elixir Storage",
+        "category": "Resource",
+        "level": 12,
+        "quantity": 1,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Dark Elixir Storage12.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/4/41/Dark_Elixir_Storage12.png/revision/latest?cb=20241124022806",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000024,
+          "lvl": 12,
+          "cnt": 1
+        }
+      },
+      {
+        "instanceId": "bldg_dark-barracks_12_ylvhp",
+        "buildingId": "dark-barracks",
+        "name": "Dark Barracks",
+        "category": "Army",
+        "level": 12,
+        "quantity": 1,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Dark Barracks12.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/0/04/Dark_Barracks12.png/revision/latest?cb=20260222201236",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000026,
+          "lvl": 12,
+          "cnt": 1
+        }
+      },
+      {
+        "instanceId": "bldg_inferno-tower_11_gb4ou",
+        "buildingId": "inferno-tower",
+        "name": "Inferno Tower",
+        "category": "Defense",
+        "level": 11,
+        "quantity": 3,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Inferno Tower11 Single.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/9/92/Inferno_Tower11_Single.png/revision/latest?cb=20250624082430",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000027,
+          "lvl": 11,
+          "cnt": 3
+        }
+      },
+      {
+        "instanceId": "bldg_air-sweeper_7_meyss",
+        "buildingId": "air-sweeper",
+        "name": "Air Sweeper",
+        "category": "Defense",
+        "level": 7,
+        "quantity": 2,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Air Sweeper7.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/9/9c/Air_Sweeper7.png/revision/latest?cb=20180115153257",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000028,
+          "lvl": 7,
+          "cnt": 2
+        }
+      },
+      {
+        "instanceId": "bldg_dark-spell-factory_7_8ab6m",
+        "buildingId": "dark-spell-factory",
+        "name": "Dark Spell Factory",
+        "category": "Army",
+        "level": 7,
+        "quantity": 1,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Dark Spell Factory7.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/8/81/Dark_Spell_Factory7.png/revision/latest?cb=20250623094811",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000029,
+          "lvl": 7,
+          "cnt": 1
+        }
+      },
+      {
+        "instanceId": "bldg_bomb-tower_10_8wbwr",
+        "buildingId": "bomb-tower",
+        "name": "Bomb Tower",
+        "category": "Defense",
+        "level": 10,
+        "quantity": 2,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Bomb Tower10.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/0/07/Bomb_Tower10.png/revision/latest?cb=20231213084402",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000032,
+          "lvl": 10,
+          "cnt": 2
+        }
+      },
+      {
+        "instanceId": "bldg_workshop_8_ujq29",
+        "buildingId": "workshop",
+        "name": "Workshop",
+        "category": "Army",
+        "level": 8,
+        "quantity": 1,
+        "footprint": {
+          "width": 4,
+          "height": 4
+        },
+        "image": {
+          "filename": "Workshop8.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/6/6d/Workshop8.png/revision/latest?cb=20250208165059",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000059,
+          "lvl": 8,
+          "cnt": 1
+        }
+      },
+      {
+        "instanceId": "bldg_b-o-b-s-hut_1_rl1gs",
+        "buildingId": "b-o-b-s-hut",
+        "name": "B.O.B's Hut",
+        "category": "Defense",
+        "level": 1,
+        "quantity": 1,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "raw": {
+          "data": 1000064,
+          "lvl": 1,
+          "cnt": 1
+        }
+      },
+      {
+        "instanceId": "bldg_scattershot_7_4tuby",
+        "buildingId": "scattershot",
+        "name": "Scattershot",
+        "category": "Defense",
+        "level": 7,
+        "quantity": 2,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Scattershot7.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/3/37/Scattershot7.png/revision/latest?cb=20260709205916",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000067,
+          "lvl": 7,
+          "cnt": 2
+        }
+      },
+      {
+        "instanceId": "bldg_pet-house_11_z14su",
+        "buildingId": "pet-house",
+        "name": "Pet House",
+        "category": "Army",
+        "level": 11,
+        "quantity": 1,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Pet House11.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/b/bf/Pet_House11.png/revision/latest?cb=20260530205018",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000068,
+          "lvl": 11,
+          "cnt": 1
+        }
+      },
+      {
+        "instanceId": "bldg_blacksmith_9_pq5oo",
+        "buildingId": "blacksmith",
+        "name": "Blacksmith",
+        "category": "Army",
+        "level": 9,
+        "quantity": 1,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Blacksmith9.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/e/e8/Blacksmith9.png/revision/latest?cb=20231213085713",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000070,
+          "lvl": 9,
+          "cnt": 1
+        }
+      },
+      {
+        "instanceId": "bldg_hero-hall_12_u8qk5",
+        "buildingId": "hero-hall",
+        "name": "Hero Hall",
+        "category": "Army",
+        "level": 12,
+        "quantity": 1,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Hero Hall12.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/e/ed/Hero_Hall12.png/revision/latest?cb=20251115150216",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000071,
+          "lvl": 12,
+          "cnt": 1
+        }
+      },
+      {
+        "instanceId": "bldg_spell-tower_2_j0w4i",
+        "buildingId": "spell-tower",
+        "name": "Spell Tower",
+        "category": "Defense",
+        "level": 2,
+        "quantity": 2,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Spell Tower2 Rage.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/a/a7/Spell_Tower2_Rage.png/revision/latest?cb=20221120080134",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000072,
+          "lvl": 2,
+          "cnt": 2
+        }
+      },
+      {
+        "instanceId": "bldg_monolith_5_ioonn",
+        "buildingId": "monolith",
+        "name": "Monolith",
+        "category": "Defense",
+        "level": 5,
+        "quantity": 1,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Monolith5.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/9/96/Monolith5.png/revision/latest?cb=20260906195022",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000077,
+          "lvl": 5,
+          "cnt": 1
+        }
+      },
+      {
+        "instanceId": "bldg_multi-gear-tower_1_2m9be",
+        "buildingId": "multi-gear-tower",
+        "name": "Multi-Gear Tower",
+        "category": "Defense",
+        "level": 1,
+        "quantity": 1,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Multi-Gear Tower1 LongRange.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/1/17/Multi-Gear_Tower1_LongRange.png/revision/latest?cb=20250208162221",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000079,
+          "lvl": 1,
+          "cnt": 1
+        }
+      },
+      {
+        "instanceId": "bldg_multi-archer-tower_3_5vot6",
+        "buildingId": "multi-archer-tower",
+        "name": "Multi-Archer Tower",
+        "category": "Defense",
+        "level": 3,
+        "quantity": 1,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Multi-Archer Tower3.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/1/14/Multi-Archer_Tower3.png/revision/latest?cb=20241122153139",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000084,
+          "lvl": 3,
+          "cnt": 1
+        }
+      },
+      {
+        "instanceId": "bldg_multi-archer-tower_4_okqdy",
+        "buildingId": "multi-archer-tower",
+        "name": "Multi-Archer Tower",
+        "category": "Defense",
+        "level": 4,
+        "quantity": 2,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Multi-Archer Tower4.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/f/f7/Multi-Archer_Tower4.png/revision/latest?cb=20251123100320",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000084,
+          "lvl": 4,
+          "cnt": 2
+        }
+      },
+      {
+        "instanceId": "bldg_ricochet-cannon_3_rs3jx",
+        "buildingId": "ricochet-cannon",
+        "name": "Ricochet Cannon",
+        "category": "Defense",
+        "level": 3,
+        "quantity": 3,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Ricochet Cannon3.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/7/77/Ricochet_Cannon3.png/revision/latest?cb=20241122153140",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000085,
+          "lvl": 3,
+          "cnt": 3
+        }
+      },
+      {
+        "instanceId": "bldg_revenge-tower_2_hzxe3",
+        "buildingId": "revenge-tower",
+        "name": "Revenge Tower",
+        "category": "Defense",
+        "level": 2,
+        "quantity": 1,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Revenge Tower2 Dormant.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/6/65/Revenge_Tower2_Dormant.png/revision/latest?cb=20260830054034",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000086,
+          "lvl": 2,
+          "cnt": 1
+        }
+      },
+      {
+        "instanceId": "bldg_firespitter_3_u4vta",
+        "buildingId": "firespitter",
+        "name": "Firespitter",
+        "category": "Defense",
+        "level": 3,
+        "quantity": 2,
+        "footprint": {
+          "width": 3,
+          "height": 3
+        },
+        "image": {
+          "filename": "Firespitter3.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/e/eb/Firespitter3.png/revision/latest?cb=20260224151021",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 1000089,
+          "lvl": 3,
+          "cnt": 2
+        }
+      },
+      {
+        "instanceId": "bldg_helper-hut_1_8s9fe",
+        "buildingId": "helper-hut",
+        "name": "Helper Hut",
+        "category": "Defense",
+        "level": 1,
+        "quantity": 1,
+        "footprint": {
+          "width": 2,
+          "height": 2
+        },
+        "raw": {
+          "data": 1000093,
+          "lvl": 1,
+          "cnt": 1
+        }
+      }
+    ],
+    "traps": [
+      {
+        "instanceId": "trap_bomb_10_d5p05",
+        "buildingId": "bomb",
+        "name": "Bomb",
+        "category": "Trap",
+        "level": 10,
+        "quantity": 8,
+        "footprint": {
+          "width": 1,
+          "height": 1
+        },
+        "image": {
+          "filename": "Bomb9.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/5/5d/Bomb9.png/revision/latest?cb=20210213070754",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 12000000,
+          "lvl": 10,
+          "cnt": 8
+        }
+      },
+      {
+        "instanceId": "trap_spring-trap_6_dhk3l",
+        "buildingId": "spring-trap",
+        "name": "Spring Trap",
+        "category": "Trap",
+        "level": 6,
+        "quantity": 1,
+        "footprint": {
+          "width": 2,
+          "height": 2
+        },
+        "image": {
+          "filename": "Spring Trap5.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/d/d5/Spring_Trap5.png/revision/latest?cb=20221218092228",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 12000001,
+          "lvl": 6,
+          "cnt": 1
+        }
+      },
+      {
+        "instanceId": "trap_spring-trap_7_0temz",
+        "buildingId": "spring-trap",
+        "name": "Spring Trap",
+        "category": "Trap",
+        "level": 7,
+        "quantity": 8,
+        "footprint": {
+          "width": 2,
+          "height": 2
+        },
+        "image": {
+          "filename": "Spring Trap7.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/d/dc/Spring_Trap7.png/revision/latest?cb=20251008002947",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 12000001,
+          "lvl": 7,
+          "cnt": 8
+        }
+      },
+      {
+        "instanceId": "trap_giant-bomb_6_7skg7",
+        "buildingId": "giant-bomb",
+        "name": "Giant Bomb",
+        "category": "Trap",
+        "level": 6,
+        "quantity": 1,
+        "footprint": {
+          "width": 2,
+          "height": 2
+        },
+        "image": {
+          "filename": "Giant Bomb5.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/a/a4/Giant_Bomb5.png/revision/latest?cb=20230613001727",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 12000002,
+          "lvl": 6,
+          "cnt": 1
+        }
+      },
+      {
+        "instanceId": "trap_giant-bomb_8_ox4e9",
+        "buildingId": "giant-bomb",
+        "name": "Giant Bomb",
+        "category": "Trap",
+        "level": 8,
+        "quantity": 5,
+        "footprint": {
+          "width": 2,
+          "height": 2
+        },
+        "image": {
+          "filename": "Giant Bomb7.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/5/5e/Giant_Bomb7.png/revision/latest?cb=20230613001734",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 12000002,
+          "lvl": 8,
+          "cnt": 5
+        }
+      },
+      {
+        "instanceId": "trap_giant-bomb_9_yvjpd",
+        "buildingId": "giant-bomb",
+        "name": "Giant Bomb",
+        "category": "Trap",
+        "level": 9,
+        "quantity": 2,
+        "footprint": {
+          "width": 2,
+          "height": 2
+        },
+        "image": {
+          "filename": "Giant Bomb9.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/d/d8/Giant_Bomb9.png/revision/latest?cb=20230613001740",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 12000002,
+          "lvl": 9,
+          "cnt": 2
+        }
+      },
+      {
+        "instanceId": "trap_air-bomb_6_6sv2t",
+        "buildingId": "air-bomb",
+        "name": "Air Bomb",
+        "category": "Trap",
+        "level": 6,
+        "quantity": 1,
+        "footprint": {
+          "width": 1,
+          "height": 1
+        },
+        "image": {
+          "filename": "Air Bomb5.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/9/99/Air_Bomb5.png/revision/latest?cb=20231213085548",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 12000005,
+          "lvl": 6,
+          "cnt": 1
+        }
+      },
+      {
+        "instanceId": "trap_air-bomb_9_3oebw",
+        "buildingId": "air-bomb",
+        "name": "Air Bomb",
+        "category": "Trap",
+        "level": 9,
+        "quantity": 3,
+        "footprint": {
+          "width": 1,
+          "height": 1
+        },
+        "image": {
+          "filename": "Air Bomb9.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/b/b1/Air_Bomb9.png/revision/latest?cb=20231213085519",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 12000005,
+          "lvl": 9,
+          "cnt": 3
+        }
+      },
+      {
+        "instanceId": "trap_air-bomb_10_y1njq",
+        "buildingId": "air-bomb",
+        "name": "Air Bomb",
+        "category": "Trap",
+        "level": 10,
+        "quantity": 4,
+        "footprint": {
+          "width": 1,
+          "height": 1
+        },
+        "image": {
+          "filename": "Air Bomb9.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/b/b1/Air_Bomb9.png/revision/latest?cb=20231213085519",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 12000005,
+          "lvl": 10,
+          "cnt": 4
+        }
+      },
+      {
+        "instanceId": "trap_seeking-air-mine_4_23of0",
+        "buildingId": "seeking-air-mine",
+        "name": "Seeking Air Mine",
+        "category": "Trap",
+        "level": 4,
+        "quantity": 9,
+        "footprint": {
+          "width": 1,
+          "height": 1
+        },
+        "image": {
+          "filename": "Seeking Air Mine3.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/8/88/Seeking_Air_Mine3.png/revision/latest?cb=20230613002140",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 12000006,
+          "lvl": 4,
+          "cnt": 9
+        }
+      },
+      {
+        "instanceId": "trap_skeleton-trap_4_k7b40",
+        "buildingId": "skeleton-trap",
+        "name": "Skeleton Trap",
+        "category": "Trap",
+        "level": 4,
+        "quantity": 4,
+        "footprint": {
+          "width": 2,
+          "height": 2
+        },
+        "image": {
+          "filename": "SkeletonTrap3 Ground.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/4/4f/SkeletonTrap3_Ground.png/revision/latest?cb=20170828102728",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 12000008,
+          "lvl": 4,
+          "cnt": 4
+        }
+      },
+      {
+        "instanceId": "trap_tornado-trap_3_hciw4",
+        "buildingId": "tornado-trap",
+        "name": "Tornado Trap",
+        "category": "Trap",
+        "level": 3,
+        "quantity": 1,
+        "footprint": {
+          "width": 2,
+          "height": 2
+        },
+        "image": {
+          "filename": "Tornado_Trap2.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/a/ab/Tornado_Trap2.png/revision/latest?cb=20181022220256",
+          "confidence": "inferred"
+        },
+        "raw": {
+          "data": 12000016,
+          "lvl": 3,
+          "cnt": 1
+        }
+      },
+      {
+        "instanceId": "trap_giga-bomb_1_wlvin",
+        "buildingId": "giga-bomb",
+        "name": "Giga Bomb",
+        "category": "Trap",
+        "level": 1,
+        "quantity": 1,
+        "footprint": {
+          "width": 2,
+          "height": 2
+        },
+        "image": {
+          "filename": "Giga Bomb1.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/b/b7/Giga_Bomb1.png/revision/latest?cb=20241122154922",
+          "confidence": "verified"
+        },
+        "raw": {
+          "data": 12000020,
+          "lvl": 1,
+          "cnt": 1
+        }
+      }
+    ],
+    "heroes": [
+      {
+        "data": 28000000,
+        "lvl": 84
+      },
+      {
+        "data": 28000001,
+        "lvl": 85
+      },
+      {
+        "data": 28000002,
+        "lvl": 71
+      },
+      {
+        "data": 28000004,
+        "lvl": 44
+      },
+      {
+        "data": 28000006,
+        "lvl": 68
+      },
+      {
+        "data": 28000007,
+        "lvl": 21
+      }
+    ],
+    "pets": [
+      {
+        "data": 73000000,
+        "lvl": 4
+      },
+      {
+        "data": 73000001,
+        "lvl": 10
+      },
+      {
+        "data": 73000002,
+        "lvl": 5
+      },
+      {
+        "data": 73000003,
+        "lvl": 12
+      },
+      {
+        "data": 73000004,
+        "lvl": 10
+      },
+      {
+        "data": 73000007,
+        "lvl": 1
+      },
+      {
+        "data": 73000008,
+        "lvl": 5
+      },
+      {
+        "data": 73000009,
+        "lvl": 1
+      },
+      {
+        "data": 73000010,
+        "lvl": 8,
+        "timer": 149073
+      },
+      {
+        "data": 73000011,
+        "lvl": 10
+      },
+      {
+        "data": 73000016,
+        "lvl": 1
+      }
+    ],
+    "equipment": [
+      {
+        "data": 90000000,
+        "lvl": 7
+      },
+      {
+        "data": 90000001,
+        "lvl": 8
+      },
+      {
+        "data": 90000002,
+        "lvl": 7
+      },
+      {
+        "data": 90000003,
+        "lvl": 11
+      },
+      {
+        "data": 90000004,
+        "lvl": 18
+      },
+      {
+        "data": 90000005,
+        "lvl": 7
+      },
+      {
+        "data": 90000006,
+        "lvl": 8
+      },
+      {
+        "data": 90000007,
+        "lvl": 1
+      },
+      {
+        "data": 90000008,
+        "lvl": 18
+      },
+      {
+        "data": 90000009,
+        "lvl": 11
+      },
+      {
+        "data": 90000010,
+        "lvl": 15
+      },
+      {
+        "data": 90000011,
+        "lvl": 9
+      },
+      {
+        "data": 90000012,
+        "lvl": 15
+      },
+      {
+        "data": 90000013,
+        "lvl": 26
+      },
+      {
+        "data": 90000014,
+        "lvl": 26
+      },
+      {
+        "data": 90000015,
+        "lvl": 15
+      },
+      {
+        "data": 90000016,
+        "lvl": 1
+      },
+      {
+        "data": 90000017,
+        "lvl": 18
+      },
+      {
+        "data": 90000019,
+        "lvl": 6
+      },
+      {
+        "data": 90000020,
+        "lvl": 18
+      },
+      {
+        "data": 90000022,
+        "lvl": 26
+      },
+      {
+        "data": 90000024,
+        "lvl": 14
+      },
+      {
+        "data": 90000032,
+        "lvl": 1
+      },
+      {
+        "data": 90000034,
+        "lvl": 18
+      },
+      {
+        "data": 90000035,
+        "lvl": 17
+      },
+      {
+        "data": 90000039,
+        "lvl": 20
+      },
+      {
+        "data": 90000040,
+        "lvl": 23
+      },
+      {
+        "data": 90000041,
+        "lvl": 15
+      },
+      {
+        "data": 90000042,
+        "lvl": 7
+      },
+      {
+        "data": 90000043,
+        "lvl": 18
+      },
+      {
+        "data": 90000044,
+        "lvl": 3
+      },
+      {
+        "data": 90000047,
+        "lvl": 5
+      },
+      {
+        "data": 90000048,
+        "lvl": 17
+      },
+      {
+        "data": 90000049,
+        "lvl": 26
+      },
+      {
+        "data": 90000050,
+        "lvl": 1
+      },
+      {
+        "data": 90000051,
+        "lvl": 1
+      },
+      {
+        "data": 90000052,
+        "lvl": 18
+      },
+      {
+        "data": 90000053,
+        "lvl": 17
+      },
+      {
+        "data": 90000056,
+        "lvl": 1
+      },
+      {
+        "data": 90000057,
+        "lvl": 18
+      },
+      {
+        "data": 90000060,
+        "lvl": 9
+      },
+      {
+        "data": 90000061,
+        "lvl": 1
+      },
+      {
+        "data": 90000062,
+        "lvl": 1
+      },
+      {
+        "data": 90000063,
+        "lvl": 1
+      }
+    ],
+    "troops": [
+      {
+        "data": 4000000,
+        "lvl": 10
+      },
+      {
+        "data": 4000001,
+        "lvl": 9,
+        "timer": 21784,
+        "extra": true
+      },
+      {
+        "data": 4000002,
+        "lvl": 9
+      },
+      {
+        "data": 4000003,
+        "lvl": 9
+      },
+      {
+        "data": 4000004,
+        "lvl": 10
+      },
+      {
+        "data": 4000005,
+        "lvl": 10
+      },
+      {
+        "data": 4000006,
+        "lvl": 11
+      },
+      {
+        "data": 4000007,
+        "lvl": 10
+      },
+      {
+        "data": 4000008,
+        "lvl": 12
+      },
+      {
+        "data": 4000009,
+        "lvl": 10
+      },
+      {
+        "data": 4000010,
+        "lvl": 9
+      },
+      {
+        "data": 4000011,
+        "lvl": 11
+      },
+      {
+        "data": 4000012,
+        "lvl": 12
+      },
+      {
+        "data": 4000013,
+        "lvl": 12
+      },
+      {
+        "data": 4000015,
+        "lvl": 6
+      },
+      {
+        "data": 4000017,
+        "lvl": 6
+      },
+      {
+        "data": 4000022,
+        "lvl": 7
+      },
+      {
+        "data": 4000023,
+        "lvl": 7
+      },
+      {
+        "data": 4000024,
+        "lvl": 6
+      },
+      {
+        "data": 4000053,
+        "lvl": 7
+      },
+      {
+        "data": 4000058,
+        "lvl": 8,
+        "timer": 259444,
+        "helper_recurrent": true
+      },
+      {
+        "data": 4000059,
+        "lvl": 9
+      },
+      {
+        "data": 4000065,
+        "lvl": 3
+      },
+      {
+        "data": 4000082,
+        "lvl": 3
+      },
+      {
+        "data": 4000095,
+        "lvl": 3
+      },
+      {
+        "data": 4000097,
+        "lvl": 4
+      },
+      {
+        "data": 4000110,
+        "lvl": 3
+      },
+      {
+        "data": 4000123,
+        "lvl": 2
+      },
+      {
+        "data": 4000132,
+        "lvl": 4
+      },
+      {
+        "data": 4000150,
+        "lvl": 4
+      },
+      {
+        "data": 4000177,
+        "lvl": 1
+      }
+    ],
+    "spells": [
+      {
+        "data": 26000000,
+        "lvl": 11
+      },
+      {
+        "data": 26000001,
+        "lvl": 7
+      },
+      {
+        "data": 26000002,
+        "lvl": 6
+      },
+      {
+        "data": 26000003,
+        "lvl": 3
+      },
+      {
+        "data": 26000005,
+        "lvl": 7
+      },
+      {
+        "data": 26000009,
+        "lvl": 7
+      },
+      {
+        "data": 26000010,
+        "lvl": 5
+      },
+      {
+        "data": 26000011,
+        "lvl": 5
+      },
+      {
+        "data": 26000016,
+        "lvl": 8
+      },
+      {
+        "data": 26000017,
+        "lvl": 7
+      },
+      {
+        "data": 26000028,
+        "lvl": 5
+      },
+      {
+        "data": 26000035,
+        "lvl": 4
+      },
+      {
+        "data": 26000053,
+        "lvl": 3
+      },
+      {
+        "data": 26000070,
+        "lvl": 4
+      },
+      {
+        "data": 26000098,
+        "lvl": 1
+      },
+      {
+        "data": 26000109,
+        "lvl": 4
+      }
+    ],
+    "activeUpgrades": [
+      {
+        "id": "wizard-tower-16",
+        "name": "Wizard Tower",
+        "currentLevel": 16,
+        "targetLevel": 17,
+        "timerSeconds": 279260,
+        "endTimestamp": 1795531206041,
+        "builderType": "Master Builder",
+        "image": {
+          "filename": "Wizard Tower17.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/e/ef/Wizard_Tower17.png/revision/latest?cb=20241122153142"
+        }
+      },
+      {
+        "id": "army-camp-13",
+        "name": "Army Camp",
+        "currentLevel": 13,
+        "targetLevel": 14,
+        "timerSeconds": 818122,
+        "endTimestamp": 1796070068041,
+        "builderType": "Master Builder",
+        "image": {
+          "filename": "Army Camp14.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/c/c6/Army_Camp14.png/revision/latest?cb=20260425143241"
+        }
+      },
+      {
+        "id": "wizard-tower-16",
+        "name": "Wizard Tower",
+        "currentLevel": 16,
+        "targetLevel": 17,
+        "timerSeconds": 326516,
+        "endTimestamp": 1795578462041,
+        "builderType": "Master Builder",
+        "image": {
+          "filename": "Wizard Tower17.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/e/ef/Wizard_Tower17.png/revision/latest?cb=20241122153142"
+        }
+      },
+      {
+        "id": "x-bow-12",
+        "name": "X-Bow",
+        "currentLevel": 12,
+        "targetLevel": 13,
+        "timerSeconds": 576102,
+        "endTimestamp": 1795828048041,
+        "builderType": "Master Builder",
+        "image": {
+          "filename": "X-Bow13 Ground.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/1/1e/X-Bow13_Ground.png/revision/latest?cb=20260503184459"
+        }
+      },
+      {
+        "id": "wizard-tower-16",
+        "name": "Wizard Tower",
+        "currentLevel": 16,
+        "targetLevel": 17,
+        "timerSeconds": 279274,
+        "endTimestamp": 1795531220041,
+        "builderType": "Master Builder",
+        "image": {
+          "filename": "Wizard Tower17.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/e/ef/Wizard_Tower17.png/revision/latest?cb=20241122153142"
+        }
+      },
+      {
+        "id": "squad-barracks-0",
+        "name": "Squad Barracks",
+        "currentLevel": 0,
+        "targetLevel": 1,
+        "timerSeconds": 29546,
+        "endTimestamp": 1795281492041,
+        "builderType": "Master Builder",
+        "image": {
+          "filename": "Squad Barracks1.png",
+          "url": "https://static.wikia.nocookie.net/clashofclans/images/0/0e/Squad_Barracks1.png/revision/latest?cb=20261115142555"
+        }
+      }
+    ],
+    "unresolvedRecords": [
+      {
+        "data": 1000097,
+        "types": [
+          {
+            "data": 103000011,
+            "modules": [
+              {
+                "data": 102000033,
+                "lvl": 1
+              },
+              {
+                "data": 102000034,
+                "lvl": 1
+              },
+              {
+                "data": 102000035,
+                "lvl": 1
+              }
+            ]
+          },
+          {
+            "data": 103000012,
+            "modules": [
+              {
+                "data": 102000036,
+                "lvl": 1
+              },
+              {
+                "data": 102000037,
+                "lvl": 1
+              },
+              {
+                "data": 102000038,
+                "lvl": 1
+              }
+            ]
+          },
+          {
+            "data": 103000013,
+            "modules": [
+              {
+                "data": 102000039,
+                "lvl": 1
+              },
+              {
+                "data": 102000040,
+                "lvl": 1
+              },
+              {
+                "data": 102000041,
+                "lvl": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "data": 1000064,
+        "lvl": 1,
+        "cnt": 1
+      },
+      {
+        "data": 1000093,
+        "lvl": 1,
+        "cnt": 1
+      }
+    ],
+    "builderBase": {
+      "buildings2": [
+        {
+          "data": 1000033,
+          "lvl": 4,
+          "cnt": 42
+        },
+        {
+          "data": 1000033,
+          "lvl": 5,
+          "cnt": 137
+        },
+        {
+          "data": 1000033,
+          "lvl": 8,
+          "cnt": 1
+        },
+        {
+          "data": 1000034,
+          "lvl": 10,
+          "cnt": 1
+        },
+        {
+          "data": 1000035,
+          "lvl": 6,
+          "cnt": 1
+        },
+        {
+          "data": 1000035,
+          "lvl": 9,
+          "cnt": 1
+        },
+        {
+          "data": 1000035,
+          "lvl": 10,
+          "cnt": 1
+        },
+        {
+          "data": 1000036,
+          "lvl": 9,
+          "cnt": 1
+        },
+        {
+          "data": 1000036,
+          "lvl": 10,
+          "cnt": 1
+        },
+        {
+          "data": 1000037,
+          "lvl": 9,
+          "cnt": 1
+        },
+        {
+          "data": 1000037,
+          "lvl": 10,
+          "cnt": 2
+        },
+        {
+          "data": 1000038,
+          "lvl": 10,
+          "cnt": 2
+        },
+        {
+          "data": 1000039,
+          "lvl": 10,
+          "cnt": 1
+        },
+        {
+          "data": 1000040,
+          "lvl": 12,
+          "cnt": 1
+        },
+        {
+          "data": 1000041,
+          "lvl": 6,
+          "cnt": 1
+        },
+        {
+          "data": 1000041,
+          "lvl": 7,
+          "cnt": 2
+        },
+        {
+          "data": 1000042,
+          "lvl": 1,
+          "cnt": 6
+        },
+        {
+          "data": 1000043,
+          "lvl": 5,
+          "cnt": 1
+        },
+        {
+          "data": 1000043,
+          "lvl": 6,
+          "cnt": 1
+        },
+        {
+          "data": 1000044,
+          "lvl": 6,
+          "cnt": 2
+        },
+        {
+          "data": 1000044,
+          "lvl": 8,
+          "cnt": 1
+        },
+        {
+          "data": 1000045,
+          "lvl": 9,
+          "cnt": 1
+        },
+        {
+          "data": 1000046,
+          "lvl": 10,
+          "cnt": 1
+        },
+        {
+          "data": 1000048,
+          "lvl": 8,
+          "cnt": 3
+        },
+        {
+          "data": 1000049,
+          "lvl": 1,
+          "cnt": 2
+        },
+        {
+          "data": 1000050,
+          "lvl": 5,
+          "cnt": 2
+        },
+        {
+          "data": 1000050,
+          "lvl": 6,
+          "cnt": 3
+        },
+        {
+          "data": 1000051,
+          "lvl": 7,
+          "cnt": 1
+        },
+        {
+          "data": 1000052,
+          "lvl": 9,
+          "cnt": 1
+        },
+        {
+          "data": 1000053,
+          "lvl": 1,
+          "cnt": 1
+        },
+        {
+          "data": 1000054,
+          "lvl": 6,
+          "cnt": 1
+        },
+        {
+          "data": 1000055,
+          "lvl": 8,
+          "cnt": 2
+        },
+        {
+          "data": 1000056,
+          "lvl": 7,
+          "cnt": 1
+        },
+        {
+          "data": 1000057,
+          "lvl": 8,
+          "cnt": 1
+        },
+        {
+          "data": 1000058,
+          "lvl": 10,
+          "cnt": 1
+        },
+        {
+          "data": 1000063,
+          "lvl": 7,
+          "cnt": 1
+        },
+        {
+          "data": 1000065,
+          "lvl": 5,
+          "cnt": 1
+        },
+        {
+          "data": 1000078,
+          "lvl": 5,
+          "cnt": 1
+        },
+        {
+          "data": 1000080,
+          "lvl": 1,
+          "cnt": 1
+        },
+        {
+          "data": 1000081,
+          "lvl": 2,
+          "cnt": 1
+        },
+        {
+          "data": 1000082,
+          "lvl": 4,
+          "cnt": 1
+        }
+      ],
+      "traps2": [
+        {
+          "data": 12000010,
+          "lvl": 1,
+          "cnt": 2
+        },
+        {
+          "data": 12000010,
+          "lvl": 2,
+          "cnt": 1
+        },
+        {
+          "data": 12000010,
+          "lvl": 3,
+          "cnt": 1
+        },
+        {
+          "data": 12000010,
+          "lvl": 4,
+          "cnt": 2
+        },
+        {
+          "data": 12000011,
+          "lvl": 5,
+          "cnt": 1
+        },
+        {
+          "data": 12000011,
+          "lvl": 6,
+          "cnt": 2
+        },
+        {
+          "data": 12000011,
+          "lvl": 7,
+          "cnt": 2
+        },
+        {
+          "data": 12000013,
+          "lvl": 1,
+          "cnt": 1
+        },
+        {
+          "data": 12000013,
+          "lvl": 6,
+          "cnt": 3
+        },
+        {
+          "data": 12000013,
+          "lvl": 7,
+          "cnt": 2
+        },
+        {
+          "data": 12000014,
+          "lvl": 1,
+          "cnt": 2
+        },
+        {
+          "data": 12000014,
+          "lvl": 7,
+          "cnt": 2
+        }
+      ],
+      "heroes2": [
+        {
+          "data": 28000003,
+          "lvl": 32
+        },
+        {
+          "data": 28000005,
+          "lvl": 20
+        }
+      ],
+      "units2": [
+        {
+          "data": 4000031,
+          "lvl": 12
+        },
+        {
+          "data": 4000032,
+          "lvl": 14
+        },
+        {
+          "data": 4000033,
+          "lvl": 14
+        },
+        {
+          "data": 4000034,
+          "lvl": 11
+        },
+        {
+          "data": 4000035,
+          "lvl": 11
+        },
+        {
+          "data": 4000036,
+          "lvl": 17
+        },
+        {
+          "data": 4000037,
+          "lvl": 13
+        },
+        {
+          "data": 4000038,
+          "lvl": 12
+        },
+        {
+          "data": 4000041,
+          "lvl": 11
+        },
+        {
+          "data": 4000042,
+          "lvl": 15
+        },
+        {
+          "data": 4000070,
+          "lvl": 18
+        },
+        {
+          "data": 4000106,
+          "lvl": 18
+        }
+      ]
+    },
+    "rawExport": {
+      "tag": "#LU8QU99L0",
+      "timestamp": 1795249025,
+      "helpers": [
+        {
+          "data": 93000000,
+          "lvl": 2,
+          "helper_cooldown": 55413
+        },
+        {
+          "data": 93000001,
+          "lvl": 1,
+          "helper_cooldown": 55413
+        },
+        {
+          "data": 93000002,
+          "lvl": 5
+        },
+        {
+          "data": 93000003,
+          "lvl": 1
+        }
+      ],
+      "guardians": [
+        {
+          "data": 107000000,
+          "lvl": 1
+        },
+        {
+          "data": 107000001,
+          "lvl": 1
+        },
+        {
+          "data": 107000008,
+          "lvl": 1
+        }
+      ],
+      "buildings": [
+        {
+          "data": 1000013,
+          "lvl": 15,
+          "gear_up": 1
+        },
+        {
+          "data": 1000011,
+          "lvl": 16,
+          "timer": 279260
+        },
+        {
+          "data": 1000000,
+          "lvl": 13,
+          "timer": 818122,
+          "helper_recurrent": true
+        },
+        {
+          "data": 1000011,
+          "lvl": 16,
+          "timer": 326516,
+          "extra": true
+        },
+        {
+          "data": 1000021,
+          "lvl": 12,
+          "timer": 576102
+        },
+        {
+          "data": 1000011,
+          "lvl": 16,
+          "timer": 279274
+        },
+        {
+          "data": 1000097,
+          "types": [
+            {
+              "data": 103000011,
+              "modules": [
+                {
+                  "data": 102000033,
+                  "lvl": 1
+                },
+                {
+                  "data": 102000034,
+                  "lvl": 1
+                },
+                {
+                  "data": 102000035,
+                  "lvl": 1
+                }
+              ]
+            },
+            {
+              "data": 103000012,
+              "modules": [
+                {
+                  "data": 102000036,
+                  "lvl": 1
+                },
+                {
+                  "data": 102000037,
+                  "lvl": 1
+                },
+                {
+                  "data": 102000038,
+                  "lvl": 1
+                }
+              ]
+            },
+            {
+              "data": 103000013,
+              "modules": [
+                {
+                  "data": 102000039,
+                  "lvl": 1
+                },
+                {
+                  "data": 102000040,
+                  "lvl": 1
+                },
+                {
+                  "data": 102000041,
+                  "lvl": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "data": 1000106,
+          "lvl": 0,
+          "timer": 29546
+        },
+        {
+          "data": 1000000,
+          "lvl": 14,
+          "cnt": 3
+        },
+        {
+          "data": 1000001,
+          "lvl": 18,
+          "cnt": 1
+        },
+        {
+          "data": 1000002,
+          "lvl": 16,
+          "cnt": 7
+        },
+        {
+          "data": 1000003,
+          "lvl": 17,
+          "cnt": 1
+        },
+        {
+          "data": 1000003,
+          "lvl": 18,
+          "cnt": 3
+        },
+        {
+          "data": 1000004,
+          "lvl": 16,
+          "cnt": 6
+        },
+        {
+          "data": 1000004,
+          "lvl": 17,
+          "cnt": 1
+        },
+        {
+          "data": 1000005,
+          "lvl": 18,
+          "cnt": 4
+        },
+        {
+          "data": 1000006,
+          "lvl": 19,
+          "cnt": 1
+        },
+        {
+          "data": 1000007,
+          "lvl": 16,
+          "cnt": 1
+        },
+        {
+          "data": 1000009,
+          "lvl": 21,
+          "cnt": 2
+        },
+        {
+          "data": 1000010,
+          "lvl": 19,
+          "cnt": 325
+        },
+        {
+          "data": 1000011,
+          "lvl": 8,
+          "cnt": 1
+        },
+        {
+          "data": 1000011,
+          "lvl": 15,
+          "cnt": 1
+        },
+        {
+          "data": 1000011,
+          "lvl": 16,
+          "cnt": 1
+        },
+        {
+          "data": 1000012,
+          "lvl": 15,
+          "cnt": 4
+        },
+        {
+          "data": 1000013,
+          "lvl": 15,
+          "cnt": 3
+        },
+        {
+          "data": 1000014,
+          "lvl": 14,
+          "cnt": 1
+        },
+        {
+          "data": 1000015,
+          "lvl": 6,
+          "cnt": 5
+        },
+        {
+          "data": 1000019,
+          "lvl": 14,
+          "cnt": 2
+        },
+        {
+          "data": 1000019,
+          "lvl": 15,
+          "cnt": 3
+        },
+        {
+          "data": 1000020,
+          "lvl": 8,
+          "cnt": 1
+        },
+        {
+          "data": 1000021,
+          "lvl": 12,
+          "cnt": 3
+        },
+        {
+          "data": 1000023,
+          "lvl": 10,
+          "cnt": 3
+        },
+        {
+          "data": 1000024,
+          "lvl": 12,
+          "cnt": 1
+        },
+        {
+          "data": 1000026,
+          "lvl": 12,
+          "cnt": 1
+        },
+        {
+          "data": 1000027,
+          "lvl": 11,
+          "cnt": 3
+        },
+        {
+          "data": 1000028,
+          "lvl": 7,
+          "cnt": 2
+        },
+        {
+          "data": 1000029,
+          "lvl": 7,
+          "cnt": 1
+        },
+        {
+          "data": 1000032,
+          "lvl": 10,
+          "cnt": 2
+        },
+        {
+          "data": 1000059,
+          "lvl": 8,
+          "cnt": 1
+        },
+        {
+          "data": 1000064,
+          "lvl": 1,
+          "cnt": 1
+        },
+        {
+          "data": 1000067,
+          "lvl": 7,
+          "cnt": 2
+        },
+        {
+          "data": 1000068,
+          "lvl": 11,
+          "cnt": 1
+        },
+        {
+          "data": 1000070,
+          "lvl": 9,
+          "cnt": 1
+        },
+        {
+          "data": 1000071,
+          "lvl": 12,
+          "cnt": 1
+        },
+        {
+          "data": 1000072,
+          "lvl": 2,
+          "cnt": 2
+        },
+        {
+          "data": 1000077,
+          "lvl": 5,
+          "cnt": 1
+        },
+        {
+          "data": 1000079,
+          "lvl": 1,
+          "cnt": 1
+        },
+        {
+          "data": 1000084,
+          "lvl": 3,
+          "cnt": 1
+        },
+        {
+          "data": 1000084,
+          "lvl": 4,
+          "cnt": 2
+        },
+        {
+          "data": 1000085,
+          "lvl": 3,
+          "cnt": 3
+        },
+        {
+          "data": 1000086,
+          "lvl": 2,
+          "cnt": 1
+        },
+        {
+          "data": 1000089,
+          "lvl": 3,
+          "cnt": 2
+        },
+        {
+          "data": 1000093,
+          "lvl": 1,
+          "cnt": 1
+        }
+      ],
+      "traps": [
+        {
+          "data": 12000000,
+          "lvl": 10,
+          "cnt": 8
+        },
+        {
+          "data": 12000001,
+          "lvl": 6,
+          "cnt": 1
+        },
+        {
+          "data": 12000001,
+          "lvl": 7,
+          "cnt": 8
+        },
+        {
+          "data": 12000002,
+          "lvl": 6,
+          "cnt": 1
+        },
+        {
+          "data": 12000002,
+          "lvl": 8,
+          "cnt": 5
+        },
+        {
+          "data": 12000002,
+          "lvl": 9,
+          "cnt": 2
+        },
+        {
+          "data": 12000005,
+          "lvl": 6,
+          "cnt": 1
+        },
+        {
+          "data": 12000005,
+          "lvl": 9,
+          "cnt": 3
+        },
+        {
+          "data": 12000005,
+          "lvl": 10,
+          "cnt": 4
+        },
+        {
+          "data": 12000006,
+          "lvl": 4,
+          "cnt": 9
+        },
+        {
+          "data": 12000008,
+          "lvl": 4,
+          "cnt": 4
+        },
+        {
+          "data": 12000016,
+          "lvl": 3,
+          "cnt": 1
+        },
+        {
+          "data": 12000020,
+          "lvl": 1,
+          "cnt": 1
+        }
+      ],
+      "decos": [
+        {
+          "data": 18000001,
+          "cnt": 1
+        },
+        {
+          "data": 18000003,
+          "cnt": 1
+        },
+        {
+          "data": 18000005,
+          "cnt": 4
+        },
+        {
+          "data": 18000006,
+          "cnt": 4
+        },
+        {
+          "data": 18000007,
+          "cnt": 1
+        },
+        {
+          "data": 18000008,
+          "cnt": 1
+        },
+        {
+          "data": 18000009,
+          "cnt": 1
+        },
+        {
+          "data": 18000010,
+          "cnt": 1
+        },
+        {
+          "data": 18000033,
+          "cnt": 1
+        },
+        {
+          "data": 18000052,
+          "cnt": 1
+        },
+        {
+          "data": 18000060,
+          "cnt": 1
+        },
+        {
+          "data": 18000063,
+          "cnt": 1
+        },
+        {
+          "data": 18000064,
+          "cnt": 1
+        },
+        {
+          "data": 18000068,
+          "cnt": 1
+        },
+        {
+          "data": 18000070,
+          "cnt": 1
+        },
+        {
+          "data": 18000071,
+          "cnt": 1
+        },
+        {
+          "data": 18000074,
+          "cnt": 1
+        },
+        {
+          "data": 18000100,
+          "cnt": 1
+        },
+        {
+          "data": 18000103,
+          "cnt": 1
+        },
+        {
+          "data": 18000114,
+          "cnt": 1
+        },
+        {
+          "data": 18000115,
+          "cnt": 1
+        },
+        {
+          "data": 18000121,
+          "cnt": 1
+        },
+        {
+          "data": 18000130,
+          "cnt": 1
+        },
+        {
+          "data": 18000135,
+          "cnt": 1
+        },
+        {
+          "data": 18000140,
+          "cnt": 1
+        },
+        {
+          "data": 18000162,
+          "cnt": 1
+        },
+        {
+          "data": 18000165,
+          "cnt": 1
+        },
+        {
+          "data": 18000166,
+          "cnt": 1
+        },
+        {
+          "data": 18000171,
+          "cnt": 1
+        },
+        {
+          "data": 18000172,
+          "cnt": 2
+        },
+        {
+          "data": 18000175,
+          "cnt": 1
+        },
+        {
+          "data": 18000178,
+          "cnt": 1
+        },
+        {
+          "data": 18000184,
+          "cnt": 1
+        },
+        {
+          "data": 18000187,
+          "cnt": 1
+        },
+        {
+          "data": 18000190,
+          "cnt": 1
+        },
+        {
+          "data": 18000192,
+          "cnt": 1
+        },
+        {
+          "data": 18000193,
+          "cnt": 1
+        },
+        {
+          "data": 18000196,
+          "cnt": 1
+        },
+        {
+          "data": 18000199,
+          "cnt": 1
+        },
+        {
+          "data": 18000213,
+          "cnt": 1
+        },
+        {
+          "data": 18000214,
+          "cnt": 1
+        },
+        {
+          "data": 18000236,
+          "cnt": 1
+        },
+        {
+          "data": 18000239,
+          "cnt": 1
+        },
+        {
+          "data": 18000242,
+          "cnt": 1
+        },
+        {
+          "data": 18000244,
+          "cnt": 1
+        },
+        {
+          "data": 18000245,
+          "cnt": 1
+        },
+        {
+          "data": 18000248,
+          "cnt": 1
+        }
+      ],
+      "obstacles": [
+        {
+          "data": 8000013,
+          "cnt": 1
+        },
+        {
+          "data": 8000087,
+          "cnt": 1
+        },
+        {
+          "data": 8000088,
+          "cnt": 1
+        },
+        {
+          "data": 8000089,
+          "cnt": 2
+        },
+        {
+          "data": 8000110,
+          "cnt": 2
+        },
+        {
+          "data": 8000111,
+          "cnt": 1
+        },
+        {
+          "data": 8000127,
+          "cnt": 1
+        },
+        {
+          "data": 8000128,
+          "cnt": 1
+        },
+        {
+          "data": 8000129,
+          "cnt": 1
+        },
+        {
+          "data": 8000131,
+          "cnt": 3
+        },
+        {
+          "data": 8000135,
+          "cnt": 1
+        },
+        {
+          "data": 8000136,
+          "cnt": 1
+        },
+        {
+          "data": 8000137,
+          "cnt": 7
+        },
+        {
+          "data": 8000138,
+          "cnt": 2
+        },
+        {
+          "data": 8000139,
+          "cnt": 1
+        }
+      ],
+      "units": [
+        {
+          "data": 4000000,
+          "lvl": 10
+        },
+        {
+          "data": 4000001,
+          "lvl": 9,
+          "timer": 21784,
+          "extra": true
+        },
+        {
+          "data": 4000002,
+          "lvl": 9
+        },
+        {
+          "data": 4000003,
+          "lvl": 9
+        },
+        {
+          "data": 4000004,
+          "lvl": 10
+        },
+        {
+          "data": 4000005,
+          "lvl": 10
+        },
+        {
+          "data": 4000006,
+          "lvl": 11
+        },
+        {
+          "data": 4000007,
+          "lvl": 10
+        },
+        {
+          "data": 4000008,
+          "lvl": 12
+        },
+        {
+          "data": 4000009,
+          "lvl": 10
+        },
+        {
+          "data": 4000010,
+          "lvl": 9
+        },
+        {
+          "data": 4000011,
+          "lvl": 11
+        },
+        {
+          "data": 4000012,
+          "lvl": 12
+        },
+        {
+          "data": 4000013,
+          "lvl": 12
+        },
+        {
+          "data": 4000015,
+          "lvl": 6
+        },
+        {
+          "data": 4000017,
+          "lvl": 6
+        },
+        {
+          "data": 4000022,
+          "lvl": 7
+        },
+        {
+          "data": 4000023,
+          "lvl": 7
+        },
+        {
+          "data": 4000024,
+          "lvl": 6
+        },
+        {
+          "data": 4000053,
+          "lvl": 7
+        },
+        {
+          "data": 4000058,
+          "lvl": 8,
+          "timer": 259444,
+          "helper_recurrent": true
+        },
+        {
+          "data": 4000059,
+          "lvl": 9
+        },
+        {
+          "data": 4000065,
+          "lvl": 3
+        },
+        {
+          "data": 4000082,
+          "lvl": 3
+        },
+        {
+          "data": 4000095,
+          "lvl": 3
+        },
+        {
+          "data": 4000097,
+          "lvl": 4
+        },
+        {
+          "data": 4000110,
+          "lvl": 3
+        },
+        {
+          "data": 4000123,
+          "lvl": 2
+        },
+        {
+          "data": 4000132,
+          "lvl": 4
+        },
+        {
+          "data": 4000150,
+          "lvl": 4
+        },
+        {
+          "data": 4000177,
+          "lvl": 1
+        }
+      ],
+      "siege_machines": [
+        {
+          "data": 4000051,
+          "lvl": 3
+        },
+        {
+          "data": 4000052,
+          "lvl": 5
+        },
+        {
+          "data": 4000062,
+          "lvl": 4
+        },
+        {
+          "data": 4000075,
+          "lvl": 5
+        },
+        {
+          "data": 4000087,
+          "lvl": 4
+        },
+        {
+          "data": 4000091,
+          "lvl": 4
+        },
+        {
+          "data": 4000092,
+          "lvl": 2
+        },
+        {
+          "data": 4000135,
+          "lvl": 1
+        }
+      ],
+      "heroes": [
+        {
+          "data": 28000000,
+          "lvl": 84
+        },
+        {
+          "data": 28000001,
+          "lvl": 85
+        },
+        {
+          "data": 28000002,
+          "lvl": 71
+        },
+        {
+          "data": 28000004,
+          "lvl": 44
+        },
+        {
+          "data": 28000006,
+          "lvl": 68
+        },
+        {
+          "data": 28000007,
+          "lvl": 21
+        }
+      ],
+      "spells": [
+        {
+          "data": 26000000,
+          "lvl": 11
+        },
+        {
+          "data": 26000001,
+          "lvl": 7
+        },
+        {
+          "data": 26000002,
+          "lvl": 6
+        },
+        {
+          "data": 26000003,
+          "lvl": 3
+        },
+        {
+          "data": 26000005,
+          "lvl": 7
+        },
+        {
+          "data": 26000009,
+          "lvl": 7
+        },
+        {
+          "data": 26000010,
+          "lvl": 5
+        },
+        {
+          "data": 26000011,
+          "lvl": 5
+        },
+        {
+          "data": 26000016,
+          "lvl": 8
+        },
+        {
+          "data": 26000017,
+          "lvl": 7
+        },
+        {
+          "data": 26000028,
+          "lvl": 5
+        },
+        {
+          "data": 26000035,
+          "lvl": 4
+        },
+        {
+          "data": 26000053,
+          "lvl": 3
+        },
+        {
+          "data": 26000070,
+          "lvl": 4
+        },
+        {
+          "data": 26000098,
+          "lvl": 1
+        },
+        {
+          "data": 26000109,
+          "lvl": 4
+        }
+      ],
+      "pets": [
+        {
+          "data": 73000000,
+          "lvl": 4
+        },
+        {
+          "data": 73000001,
+          "lvl": 10
+        },
+        {
+          "data": 73000002,
+          "lvl": 5
+        },
+        {
+          "data": 73000003,
+          "lvl": 12
+        },
+        {
+          "data": 73000004,
+          "lvl": 10
+        },
+        {
+          "data": 73000007,
+          "lvl": 1
+        },
+        {
+          "data": 73000008,
+          "lvl": 5
+        },
+        {
+          "data": 73000009,
+          "lvl": 1
+        },
+        {
+          "data": 73000010,
+          "lvl": 8,
+          "timer": 149073
+        },
+        {
+          "data": 73000011,
+          "lvl": 10
+        },
+        {
+          "data": 73000016,
+          "lvl": 1
+        }
+      ],
+      "equipment": [
+        {
+          "data": 90000000,
+          "lvl": 7
+        },
+        {
+          "data": 90000001,
+          "lvl": 8
+        },
+        {
+          "data": 90000002,
+          "lvl": 7
+        },
+        {
+          "data": 90000003,
+          "lvl": 11
+        },
+        {
+          "data": 90000004,
+          "lvl": 18
+        },
+        {
+          "data": 90000005,
+          "lvl": 7
+        },
+        {
+          "data": 90000006,
+          "lvl": 8
+        },
+        {
+          "data": 90000007,
+          "lvl": 1
+        },
+        {
+          "data": 90000008,
+          "lvl": 18
+        },
+        {
+          "data": 90000009,
+          "lvl": 11
+        },
+        {
+          "data": 90000010,
+          "lvl": 15
+        },
+        {
+          "data": 90000011,
+          "lvl": 9
+        },
+        {
+          "data": 90000012,
+          "lvl": 15
+        },
+        {
+          "data": 90000013,
+          "lvl": 26
+        },
+        {
+          "data": 90000014,
+          "lvl": 26
+        },
+        {
+          "data": 90000015,
+          "lvl": 15
+        },
+        {
+          "data": 90000016,
+          "lvl": 1
+        },
+        {
+          "data": 90000017,
+          "lvl": 18
+        },
+        {
+          "data": 90000019,
+          "lvl": 6
+        },
+        {
+          "data": 90000020,
+          "lvl": 18
+        },
+        {
+          "data": 90000022,
+          "lvl": 26
+        },
+        {
+          "data": 90000024,
+          "lvl": 14
+        },
+        {
+          "data": 90000032,
+          "lvl": 1
+        },
+        {
+          "data": 90000034,
+          "lvl": 18
+        },
+        {
+          "data": 90000035,
+          "lvl": 17
+        },
+        {
+          "data": 90000039,
+          "lvl": 20
+        },
+        {
+          "data": 90000040,
+          "lvl": 23
+        },
+        {
+          "data": 90000041,
+          "lvl": 15
+        },
+        {
+          "data": 90000042,
+          "lvl": 7
+        },
+        {
+          "data": 90000043,
+          "lvl": 18
+        },
+        {
+          "data": 90000044,
+          "lvl": 3
+        },
+        {
+          "data": 90000047,
+          "lvl": 5
+        },
+        {
+          "data": 90000048,
+          "lvl": 17
+        },
+        {
+          "data": 90000049,
+          "lvl": 26
+        },
+        {
+          "data": 90000050,
+          "lvl": 1
+        },
+        {
+          "data": 90000051,
+          "lvl": 1
+        },
+        {
+          "data": 90000052,
+          "lvl": 18
+        },
+        {
+          "data": 90000053,
+          "lvl": 17
+        },
+        {
+          "data": 90000056,
+          "lvl": 1
+        },
+        {
+          "data": 90000057,
+          "lvl": 18
+        },
+        {
+          "data": 90000060,
+          "lvl": 9
+        },
+        {
+          "data": 90000061,
+          "lvl": 1
+        },
+        {
+          "data": 90000062,
+          "lvl": 1
+        },
+        {
+          "data": 90000063,
+          "lvl": 1
+        }
+      ],
+      "house_parts": [
+        82000000,
+        82000001,
+        82000002,
+        82000005,
+        82000006,
+        82000008,
+        82000009,
+        82000010,
+        82000011,
+        82000013,
+        82000014,
+        82000015,
+        82000016,
+        82000017,
+        82000029,
+        82000031,
+        82000032,
+        82000034,
+        82000046,
+        82000048,
+        82000049,
+        82000050,
+        82000051,
+        82000052,
+        82000053,
+        82000054,
+        82000055,
+        82000056,
+        82000058,
+        82000059,
+        82000060,
+        82000061,
+        82000062,
+        82000063,
+        82000064,
+        82000066,
+        82000067,
+        82000068,
+        82000082,
+        82000140,
+        82000141
+      ],
+      "skins": [
+        52000055,
+        52000123,
+        52000133,
+        52000136,
+        52000145,
+        52000070,
+        52000037,
+        52000116,
+        52000015,
+        52000243,
+        52000131,
+        52000226,
+        52000292,
+        52000320,
+        52000270,
+        52000331,
+        52000379,
+        52000259,
+        52000337
+      ],
+      "building_variants": [],
+      "sceneries": [
+        60000015,
+        60000019,
+        60000069,
+        60000013,
+        60000055,
+        60000082,
+        60000034
+      ],
+      "buildings2": [
+        {
+          "data": 1000033,
+          "lvl": 4,
+          "cnt": 42
+        },
+        {
+          "data": 1000033,
+          "lvl": 5,
+          "cnt": 137
+        },
+        {
+          "data": 1000033,
+          "lvl": 8,
+          "cnt": 1
+        },
+        {
+          "data": 1000034,
+          "lvl": 10,
+          "cnt": 1
+        },
+        {
+          "data": 1000035,
+          "lvl": 6,
+          "cnt": 1
+        },
+        {
+          "data": 1000035,
+          "lvl": 9,
+          "cnt": 1
+        },
+        {
+          "data": 1000035,
+          "lvl": 10,
+          "cnt": 1
+        },
+        {
+          "data": 1000036,
+          "lvl": 9,
+          "cnt": 1
+        },
+        {
+          "data": 1000036,
+          "lvl": 10,
+          "cnt": 1
+        },
+        {
+          "data": 1000037,
+          "lvl": 9,
+          "cnt": 1
+        },
+        {
+          "data": 1000037,
+          "lvl": 10,
+          "cnt": 2
+        },
+        {
+          "data": 1000038,
+          "lvl": 10,
+          "cnt": 2
+        },
+        {
+          "data": 1000039,
+          "lvl": 10,
+          "cnt": 1
+        },
+        {
+          "data": 1000040,
+          "lvl": 12,
+          "cnt": 1
+        },
+        {
+          "data": 1000041,
+          "lvl": 6,
+          "cnt": 1
+        },
+        {
+          "data": 1000041,
+          "lvl": 7,
+          "cnt": 2
+        },
+        {
+          "data": 1000042,
+          "lvl": 1,
+          "cnt": 6
+        },
+        {
+          "data": 1000043,
+          "lvl": 5,
+          "cnt": 1
+        },
+        {
+          "data": 1000043,
+          "lvl": 6,
+          "cnt": 1
+        },
+        {
+          "data": 1000044,
+          "lvl": 6,
+          "cnt": 2
+        },
+        {
+          "data": 1000044,
+          "lvl": 8,
+          "cnt": 1
+        },
+        {
+          "data": 1000045,
+          "lvl": 9,
+          "cnt": 1
+        },
+        {
+          "data": 1000046,
+          "lvl": 10,
+          "cnt": 1
+        },
+        {
+          "data": 1000048,
+          "lvl": 8,
+          "cnt": 3
+        },
+        {
+          "data": 1000049,
+          "lvl": 1,
+          "cnt": 2
+        },
+        {
+          "data": 1000050,
+          "lvl": 5,
+          "cnt": 2
+        },
+        {
+          "data": 1000050,
+          "lvl": 6,
+          "cnt": 3
+        },
+        {
+          "data": 1000051,
+          "lvl": 7,
+          "cnt": 1
+        },
+        {
+          "data": 1000052,
+          "lvl": 9,
+          "cnt": 1
+        },
+        {
+          "data": 1000053,
+          "lvl": 1,
+          "cnt": 1
+        },
+        {
+          "data": 1000054,
+          "lvl": 6,
+          "cnt": 1
+        },
+        {
+          "data": 1000055,
+          "lvl": 8,
+          "cnt": 2
+        },
+        {
+          "data": 1000056,
+          "lvl": 7,
+          "cnt": 1
+        },
+        {
+          "data": 1000057,
+          "lvl": 8,
+          "cnt": 1
+        },
+        {
+          "data": 1000058,
+          "lvl": 10,
+          "cnt": 1
+        },
+        {
+          "data": 1000063,
+          "lvl": 7,
+          "cnt": 1
+        },
+        {
+          "data": 1000065,
+          "lvl": 5,
+          "cnt": 1
+        },
+        {
+          "data": 1000078,
+          "lvl": 5,
+          "cnt": 1
+        },
+        {
+          "data": 1000080,
+          "lvl": 1,
+          "cnt": 1
+        },
+        {
+          "data": 1000081,
+          "lvl": 2,
+          "cnt": 1
+        },
+        {
+          "data": 1000082,
+          "lvl": 4,
+          "cnt": 1
+        }
+      ],
+      "traps2": [
+        {
+          "data": 12000010,
+          "lvl": 1,
+          "cnt": 2
+        },
+        {
+          "data": 12000010,
+          "lvl": 2,
+          "cnt": 1
+        },
+        {
+          "data": 12000010,
+          "lvl": 3,
+          "cnt": 1
+        },
+        {
+          "data": 12000010,
+          "lvl": 4,
+          "cnt": 2
+        },
+        {
+          "data": 12000011,
+          "lvl": 5,
+          "cnt": 1
+        },
+        {
+          "data": 12000011,
+          "lvl": 6,
+          "cnt": 2
+        },
+        {
+          "data": 12000011,
+          "lvl": 7,
+          "cnt": 2
+        },
+        {
+          "data": 12000013,
+          "lvl": 1,
+          "cnt": 1
+        },
+        {
+          "data": 12000013,
+          "lvl": 6,
+          "cnt": 3
+        },
+        {
+          "data": 12000013,
+          "lvl": 7,
+          "cnt": 2
+        },
+        {
+          "data": 12000014,
+          "lvl": 1,
+          "cnt": 2
+        },
+        {
+          "data": 12000014,
+          "lvl": 7,
+          "cnt": 2
+        }
+      ],
+      "decos2": [
+        {
+          "data": 18000038,
+          "cnt": 1
+        },
+        {
+          "data": 18000039,
+          "cnt": 4
+        },
+        {
+          "data": 18000040,
+          "cnt": 4
+        },
+        {
+          "data": 18000042,
+          "cnt": 25
+        },
+        {
+          "data": 18000045,
+          "cnt": 2
+        }
+      ],
+      "obstacles2": [
+        {
+          "data": 8000063,
+          "cnt": 14
+        },
+        {
+          "data": 8000064,
+          "cnt": 11
+        }
+      ],
+      "units2": [
+        {
+          "data": 4000031,
+          "lvl": 12
+        },
+        {
+          "data": 4000032,
+          "lvl": 14
+        },
+        {
+          "data": 4000033,
+          "lvl": 14
+        },
+        {
+          "data": 4000034,
+          "lvl": 11
+        },
+        {
+          "data": 4000035,
+          "lvl": 11
+        },
+        {
+          "data": 4000036,
+          "lvl": 17
+        },
+        {
+          "data": 4000037,
+          "lvl": 13
+        },
+        {
+          "data": 4000038,
+          "lvl": 12
+        },
+        {
+          "data": 4000041,
+          "lvl": 11
+        },
+        {
+          "data": 4000042,
+          "lvl": 15
+        },
+        {
+          "data": 4000070,
+          "lvl": 18
+        },
+        {
+          "data": 4000106,
+          "lvl": 18
+        }
+      ],
+      "heroes2": [
+        {
+          "data": 28000003,
+          "lvl": 32
+        },
+        {
+          "data": 28000005,
+          "lvl": 20
+        }
+      ],
+      "skins2": [],
+      "building_variants2": [],
+      "sceneries2": [],
+      "emotes": [
+        126000000,
+        126000001,
+        126000002,
+        126000003,
+        126000004
+      ],
+      "boosts": {
+        "clocktower_cooldown": 15402
+      }
+    }
+  },
+  "snapshots": [
+    {
+      "id": "snap_1795251946047",
+      "tag": "#LU8QU99L0",
+      "playerName": "Chief #LU8QU99L0",
+      "importedAt": "2026-11-21T09:05:46.042Z",
+      "townHallLevel": 18,
+      "totalBuildings": 97,
+      "totalTraps": 48,
+      "totalHeroes": 6,
+      "activeUpgradesCount": 6,
+      "summary": "Imported village #LU8QU99L0 (TH18, 97 buildings, 48 traps, 6 upgrades)"
+    },
+    {
+      "id": "snap_1795251140354",
+      "tag": "#LU8QU99L0",
+      "playerName": "Chief #LU8QU99L0",
+      "importedAt": "2026-11-21T08:52:20.351Z",
+      "townHallLevel": 18,
+      "totalBuildings": 422,
+      "totalTraps": 48,
+      "totalHeroes": 6,
+      "activeUpgradesCount": 7,
+      "summary": "Imported village #LU8QU99L0 (TH18, 422 buildings, 48 traps, 7 upgrades)"
+    },
+    {
+      "id": "snap_1795250975741",
+      "tag": "#LU8QU99L0",
+      "playerName": "Chief #LU8QU99L0",
+      "importedAt": "2026-11-21T08:49:35.737Z",
+      "townHallLevel": 18,
+      "totalBuildings": 422,
+      "totalTraps": 48,
+      "totalHeroes": 6,
+      "activeUpgradesCount": 6,
+      "summary": "Imported village #LU8QU99L0 (TH18, 422 buildings, 48 traps, 6 upgrades)"
+    },
+    {
+      "id": "snap_1795250874491",
+      "tag": "#LU8QU99L0",
+      "playerName": "Chief #LU8QU99L0",
+      "importedAt": "2026-11-21T08:47:54.482Z",
+      "townHallLevel": 18,
+      "totalBuildings": 422,
+      "totalTraps": 48,
+      "totalHeroes": 6,
+      "activeUpgradesCount": 6,
+      "summary": "Imported village #LU8QU99L0 (TH18, 422 buildings, 48 traps, 6 upgrades)"
+    },
+    {
+      "id": "snap_1795250466994",
+      "tag": "#LU8QU99L0",
+      "playerName": "Chief #LU8QU99L0",
+      "importedAt": "2026-11-21T08:41:06.988Z",
+      "townHallLevel": 18,
+      "totalBuildings": 422,
+      "totalTraps": 48,
+      "totalHeroes": 6,
+      "activeUpgradesCount": 6,
+      "summary": "Imported village #LU8QU99L0 (TH18, 422 buildings, 48 traps, 6 upgrades)"
+    },
+    {
+      "id": "snap_1795249700580",
+      "tag": "#LU8QU99L0",
+      "playerName": "Chief #LU8QU99L0",
+      "importedAt": "2026-11-21T08:28:20.576Z",
+      "townHallLevel": 18,
+      "totalBuildings": 422,
+      "totalTraps": 48,
+      "totalHeroes": 6,
+      "activeUpgradesCount": 6,
+      "summary": "Imported village #LU8QU99L0 (TH18, 422 buildings, 48 traps, 6 upgrades)"
+    },
+    {
+      "id": "snap_1795249484667",
+      "tag": "#LU8QU99L0",
+      "playerName": "Chief #LU8QU99L0",
+      "importedAt": "2026-11-21T08:24:44.662Z",
+      "townHallLevel": 19,
+      "totalBuildings": 422,
+      "totalTraps": 48,
+      "totalHeroes": 6,
+      "activeUpgradesCount": 6,
+      "summary": "Imported village #LU8QU99L0 (TH19, 422 buildings, 48 traps, 6 upgrades)"
+    },
+    {
+      "id": "snap_1795249449986",
+      "tag": "#LU8QU99L0",
+      "playerName": "Chief #LU8QU99L0",
+      "importedAt": "2026-11-21T08:24:09.984Z",
+      "townHallLevel": 19,
+      "totalBuildings": 422,
+      "totalTraps": 48,
+      "totalHeroes": 6,
+      "activeUpgradesCount": 6,
+      "summary": "Imported village #LU8QU99L0 (TH19, 422 buildings, 48 traps, 6 upgrades)"
+    },
+    {
+      "id": "snap_1795248349098",
+      "tag": "#LU8QU99L0",
+      "playerName": "Chief #LU8QU99L0",
+      "importedAt": "2026-11-21T08:05:49.094Z",
+      "townHallLevel": 19,
+      "totalBuildings": 422,
+      "totalTraps": 48,
+      "totalHeroes": 6,
+      "activeUpgradesCount": 6,
+      "summary": "Imported village #LU8QU99L0 (TH19, 422 buildings, 48 traps, 6 upgrades)"
+    },
+    {
+      "id": "snap_1795248149259",
+      "tag": "#LU8QU99L0",
+      "playerName": "Chief #LU8QU99L0",
+      "importedAt": "2026-11-21T08:02:29.255Z",
+      "townHallLevel": 19,
+      "totalBuildings": 422,
+      "totalTraps": 48,
+      "totalHeroes": 6,
+      "activeUpgradesCount": 6,
+      "summary": "Imported village #LU8QU99L0 (TH19, 422 buildings, 48 traps, 6 upgrades)"
+    },
+    {
+      "id": "snap_1795103807305",
+      "tag": "#LU8QU99L0",
+      "playerName": "Chief #9LV2PR99",
+      "importedAt": "2026-11-19T15:56:47.302Z",
+      "townHallLevel": 18,
+      "totalBuildings": 421,
+      "totalTraps": 48,
+      "totalHeroes": 6,
+      "activeUpgradesCount": 7,
+      "summary": "Imported village #LU8QU99L0 (TH18, 421 buildings, 48 traps, 7 upgrades)",
+      "activeUpgrades": [
+        {
+          "id": "cannon-13",
+          "name": "Cannon",
+          "currentLevel": 13,
+          "targetLevel": 14,
+          "timerSeconds": 64219,
+          "endTimestamp": 1795168516104,
+          "builderType": "Master Builder",
+          "image": {
+            "filename": "Cannon14B.png",
+            "url": "https://static.wikia.nocookie.net/clashofclans/images/6/64/Cannon14B.png/revision/latest?cb=20230521100931"
+          }
+        },
+        {
+          "id": "cannon-13",
+          "name": "Cannon",
+          "currentLevel": 13,
+          "targetLevel": 14,
+          "timerSeconds": 82914,
+          "endTimestamp": 1795187211104,
+          "builderType": "Master Builder",
+          "image": {
+            "filename": "Cannon14B.png",
+            "url": "https://static.wikia.nocookie.net/clashofclans/images/6/64/Cannon14B.png/revision/latest?cb=20230521100931"
+          }
+        },
+        {
+          "id": "cannon-13",
+          "name": "Cannon",
+          "currentLevel": 13,
+          "targetLevel": 14,
+          "timerSeconds": 115698,
+          "endTimestamp": 1795219995104,
+          "builderType": "Master Builder",
+          "image": {
+            "filename": "Cannon14B.png",
+            "url": "https://static.wikia.nocookie.net/clashofclans/images/6/64/Cannon14B.png/revision/latest?cb=20230521100931"
+          }
+        },
+        {
+          "id": "spell-tower-6",
+          "name": "Spell Tower",
+          "currentLevel": 6,
+          "targetLevel": 7,
+          "timerSeconds": 144260,
+          "endTimestamp": 1795248557104,
+          "builderType": "Master Builder"
+        },
+        {
+          "id": "spell-tower-6",
+          "name": "Spell Tower",
+          "currentLevel": 6,
+          "targetLevel": 7,
+          "timerSeconds": 70184,
+          "endTimestamp": 1795174481104,
+          "builderType": "Master Builder"
+        },
+        {
+          "id": "multi-archer-tower-3",
+          "name": "Multi-Archer Tower",
+          "currentLevel": 3,
+          "targetLevel": 4,
+          "timerSeconds": 46885,
+          "endTimestamp": 1795151182104,
+          "builderType": "Master Builder",
+          "image": {
+            "filename": "Multi-Archer Tower4.png",
+            "url": "https://static.wikia.nocookie.net/clashofclans/images/f/f7/Multi-Archer_Tower4.png/revision/latest?cb=20251123100320"
+          }
+        },
+        {
+          "id": "multi-archer-tower-3",
+          "name": "Multi-Archer Tower",
+          "currentLevel": 3,
+          "targetLevel": 4,
+          "timerSeconds": 34257,
+          "endTimestamp": 1795138554104,
+          "builderType": "Master Builder",
+          "image": {
+            "filename": "Multi-Archer Tower4.png",
+            "url": "https://static.wikia.nocookie.net/clashofclans/images/f/f7/Multi-Archer_Tower4.png/revision/latest?cb=20251123100320"
+          }
+        }
+      ]
+    },
+    {
+      "id": "snap_1795099348035",
+      "tag": "#9LV2PR99",
+      "playerName": "Chief #9LV2PR99",
+      "importedAt": "2026-11-19T14:42:28.033Z",
+      "townHallLevel": 18,
+      "totalBuildings": 371,
+      "totalTraps": 47,
+      "totalHeroes": 5,
+      "activeUpgradesCount": 3,
+      "summary": "Imported village #9LV2PR99 (TH18, 371 buildings, 47 traps, 3 upgrades)"
+    },
+    {
+      "id": "snap_1795099347981",
+      "tag": "#TESTPLAYER",
+      "playerName": "Chief #9LV2PR99",
+      "importedAt": "2026-11-19T14:42:27.979Z",
+      "townHallLevel": 18,
+      "totalBuildings": 8,
+      "totalTraps": 8,
+      "totalHeroes": 1,
+      "activeUpgradesCount": 1,
+      "summary": "Imported village #TESTPLAYER (TH18, 8 buildings, 8 traps, 1 upgrades)"
+    },
+    {
+      "id": "snap_1795098271975",
+      "tag": "#9LV2PR99",
+      "playerName": "Chief ClashMaster",
+      "importedAt": "2026-11-19T14:24:31.975Z",
+      "townHallLevel": 18,
+      "totalBuildings": 371,
+      "totalTraps": 47,
+      "totalHeroes": 5,
+      "activeUpgradesCount": 3,
+      "summary": "Initial Home Village TH18 Snapshot (371 buildings, 3 active upgrades)"
+    }
+  ]
+}

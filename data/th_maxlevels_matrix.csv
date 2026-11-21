@@ -1,0 +1,57 @@
+Building ID,Building Name,Category,TH 1,TH 2,TH 3,TH 4,TH 5,TH 6,TH 7,TH 8,TH 9,TH 10,TH 11,TH 12,TH 13,TH 14,TH 15,TH 16,TH 17,TH 18,TH 19
+builders-hut,Builder's Hut,Defense,1,1,1,1,1,1,1,1,1,1,1,1,1,4,5,6,7,8,9
+cannon,Cannon,Defense,2,3,4,5,6,7,8,10,11,13,15,17,19,20,21,21,21,21,21
+inferno-tower,Inferno Tower,Defense,2,5,8,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12
+elixir-collector,Elixir Collector,Resource,2,4,6,8,10,10,11,12,12,13,14,15,15,16,16,17,17,18,18
+elixir-storage,Elixir Storage,Resource,1,3,6,8,9,10,11,11,11,11,12,13,14,15,16,17,18,19,20
+gold-mine,Gold Mine,Resource,2,4,6,8,10,10,11,12,12,13,14,15,15,16,16,17,17,18,18
+gold-storage,Gold Storage,Resource,1,3,6,8,9,10,11,11,11,11,12,13,14,15,16,17,18,19,20
+army-camp,Army Camp,Army,1,2,3,4,5,6,6,6,7,8,9,10,11,11,12,12,13,14,14
+barracks,Barracks,Army,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,19,19
+blacksmith,Blacksmith,Army,2,3,4,4,5,6,6,6,7,8,9,9,9,9,9,9,9,10,10
+town-hall,Town Hall,Other,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19
+archer-tower,Archer Tower,Defense,0,2,3,4,6,7,8,10,11,13,15,17,19,20,21,21,21,21,21
+wall,Wall,Defense,0,2,3,4,5,6,7,8,10,11,12,13,14,15,16,17,18,19,20
+clan-castle,Clan Castle,Resource,0,1,1,2,2,3,3,4,5,6,7,8,9,10,11,12,13,14,15
+mortar,Mortar,Defense,0,0,1,2,3,4,5,6,7,8,10,12,13,14,15,16,17,18,18
+laboratory,Laboratory,Army,0,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17
+bomb,Bomb,Trap,0,0,2,2,3,3,4,5,6,7,8,8,9,10,11,12,13,14,14
+air-defense,Air Defense,Defense,0,0,0,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17
+hero-hall,Hero Hall,Army,0,0,0,1,1,1,1,2,3,4,5,6,7,8,9,10,11,12,13
+spring-trap,Spring Trap,Trap,0,0,0,1,1,1,2,3,4,5,6,7,8,9,10,11,12,13,14
+wizard-tower,Wizard Tower,Defense,0,0,0,0,2,3,4,6,7,9,10,11,13,14,15,16,17,17,17
+spell-factory,Spell Factory,Army,0,0,0,0,1,2,3,3,4,5,6,6,7,7,8,9,10,10,10
+air-bomb,Air Bomb,Trap,0,0,0,0,2,2,3,3,4,4,5,6,8,9,10,11,12,13,13
+air-sweeper,Air Sweeper,Defense,0,0,0,0,0,2,3,4,5,6,7,7,7,7,7,7,7,7,7
+giant-bomb,Giant Bomb,Trap,0,0,0,0,0,2,2,3,3,4,5,5,7,8,9,10,11,12,12
+hidden-tesla,Hidden Tesla,Defense,0,0,0,0,0,0,3,6,7,8,9,10,12,13,14,15,16,17,18
+dark-elixir-drill,Dark Elixir Drill,Resource,0,0,0,0,0,0,3,3,6,7,8,9,9,10,10,11,11,12,12
+dark-elixir-storage,Dark Elixir Storage,Resource,0,0,0,0,0,0,2,4,6,6,6,7,8,9,10,11,12,13,14
+dark-barracks,Dark Barracks,Army,0,0,0,0,0,0,2,4,6,7,8,9,10,11,12,13,13,13,13
+seeking-air-mine,Seeking Air Mine,Trap,0,0,0,0,0,0,1,1,2,3,3,3,4,4,5,6,7,8,8
+bomb-tower,Bomb Tower,Defense,0,0,0,0,0,0,0,2,3,4,6,7,8,9,10,11,12,13,13
+dark-spell-factory,Dark Spell Factory,Army,0,0,0,0,0,0,0,2,4,5,5,6,6,7,8,8,8,8,8
+squad-barracks,Squad Barracks,Army,0,0,0,0,0,0,0,1,2,3,4,5,6,7,8,9,10,11,12
+skeleton-trap,Skeleton Trap,Trap,0,0,0,0,0,0,0,2,3,4,4,4,4,4,4,4,4,5,6
+helper-hut,Helper Hut,Defense,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+xbow,X-Bow,Defense,0,0,0,0,0,0,0,0,3,4,5,6,8,9,10,11,12,13,14
+eagle-artillery,Eagle Artillery,Defense,0,0,0,0,0,0,0,0,0,0,2,3,4,5,6,7,7,7,7
+tornado-trap,Tornado Trap,Trap,0,0,0,0,0,0,0,0,0,0,2,3,3,3,3,3,3,3,3
+giga-tesla,Giga Tesla,Defense,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+workshop,Workshop,Army,0,0,0,0,0,0,0,0,0,0,0,3,5,6,7,8,9,9,9
+giga-inferno,Giga Inferno,Defense,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0
+scattershot,Scattershot,Defense,0,0,0,0,0,0,0,0,0,0,0,0,2,3,4,5,6,7,7
+pet-house,Pet House,Army,0,0,0,0,0,0,0,0,0,0,0,0,0,4,8,10,11,12,12
+monolith,Monolith,Defense,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,3,4,5,5
+spell-tower,Spell Tower,Defense,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,4,4,4
+multiarcher-tower,Multi-Archer Tower,Defense,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,3,4,5
+ricochet-cannon,Ricochet Cannon,Defense,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,3,4,5
+firespitter,Firespitter,Defense,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,3,3
+inferno-artillery,Inferno Artillery,Defense,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0
+multigear-tower,Multi-Gear Tower,Defense,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,3,4
+giga-bomb,Giga Bomb,Trap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,4,4
+crafting-station,Crafting Station,Defense,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+revenge-tower,Revenge Tower,Defense,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2
+super-wizard-tower,Super Wizard Tower,Defense,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2
+firecracker-tower,Firecracker Tower,Defense,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+spiky-tower,Spiky Tower,Defense,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2

@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-11-19T11:58:58.927Z",
+  "totalTownHalls": 19,
+  "maxTownHall": 19,
+  "status": "warnings",
+  "errors": [],
+  "warnings": [
+    "TH18 Dark Elixir Drill: level 12 exceeds overall building max 11",
+    "TH18 Elixir Collector: level 18 exceeds overall building max 17",
+    "TH18 Gold Mine: level 18 exceeds overall building max 17",
+    "TH19 X-Bow: level 14 exceeds overall building max 13",
+    "TH19 Dark Elixir Drill: level 12 exceeds overall building max 11",
+    "TH19 Elixir Collector: level 18 exceeds overall building max 17",
+    "TH19 Gold Mine: level 18 exceeds overall building max 17",
+    "TH19 Skeleton Trap: level 6 exceeds overall building max 5"
+  ],
+  "summary": {
+    "totalEvaluatedEntries": 650,
+    "verifiedEntries": 584,
+    "inferredEntries": 30,
+    "missingEntries": 36
+  }
+}

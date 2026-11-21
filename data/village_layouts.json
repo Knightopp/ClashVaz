@@ -1,0 +1,123 @@
+[
+  {
+    "id": "layout-active-main",
+    "name": "Active Village Base",
+    "isDefault": true,
+    "gridSize": 44,
+    "createdAt": "2026-11-19T14:24:31.977Z",
+    "updatedAt": "2026-11-19T14:24:31.977Z",
+    "buildings": [
+      {
+        "instanceId": "inst_th",
+        "buildingId": "town-hall",
+        "name": "Town Hall",
+        "category": "Defense",
+        "level": 18,
+        "x": 20,
+        "y": 20,
+        "width": 4,
+        "height": 4,
+        "image": "https://static.wikia.nocookie.net/clashofclans/images/7/76/Town_Hall18.png/revision/latest?cb=20251117162127"
+      },
+      {
+        "instanceId": "inst_cc",
+        "buildingId": "clan-castle",
+        "name": "Clan Castle",
+        "category": "Defense",
+        "level": 14,
+        "x": 24,
+        "y": 20,
+        "width": 4,
+        "height": 4
+      },
+      {
+        "instanceId": "inst_mono",
+        "buildingId": "monolith",
+        "name": "Monolith",
+        "category": "Defense",
+        "level": 5,
+        "x": 20,
+        "y": 25,
+        "width": 3,
+        "height": 3
+      },
+      {
+        "instanceId": "inst_fs1",
+        "buildingId": "firespitter",
+        "name": "Firespitter",
+        "category": "Defense",
+        "level": 3,
+        "x": 17,
+        "y": 20,
+        "width": 3,
+        "height": 3
+      },
+      {
+        "instanceId": "inst_fc1",
+        "buildingId": "firecracker-tower",
+        "name": "Firecracker Tower",
+        "category": "Defense",
+        "level": 2,
+        "x": 23,
+        "y": 16,
+        "width": 3,
+        "height": 3
+      },
+      {
+        "instanceId": "inst_rc1",
+        "buildingId": "ricochet-cannon",
+        "name": "Ricochet Cannon",
+        "category": "Defense",
+        "level": 4,
+        "x": 16,
+        "y": 24,
+        "width": 3,
+        "height": 3
+      },
+      {
+        "instanceId": "inst_mat1",
+        "buildingId": "multiarcher-tower",
+        "name": "Multi-Archer Tower",
+        "category": "Defense",
+        "level": 4,
+        "x": 24,
+        "y": 24,
+        "width": 3,
+        "height": 3
+      }
+    ]
+  },
+  {
+    "id": "layout-war-anti3",
+    "name": "Anti-3 Star War Base",
+    "isDefault": false,
+    "gridSize": 44,
+    "createdAt": "2026-11-19T14:24:31.977Z",
+    "updatedAt": "2026-11-19T14:24:31.977Z",
+    "buildings": [
+      {
+        "instanceId": "inst_w_th",
+        "buildingId": "town-hall",
+        "name": "Town Hall",
+        "category": "Defense",
+        "level": 18,
+        "x": 12,
+        "y": 20,
+        "width": 4,
+        "height": 4,
+        "image": "https://static.wikia.nocookie.net/clashofclans/images/7/76/Town_Hall18.png/revision/latest?cb=20251117162127"
+      },
+      {
+        "instanceId": "inst_w_mono",
+        "buildingId": "monolith",
+        "name": "Monolith",
+        "category": "Defense",
+        "level": 5,
+        "x": 28,
+        "y": 20,
+        "width": 3,
+        "height": 3
+      }
+    ]
+  }
+]

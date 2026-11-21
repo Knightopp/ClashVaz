@@ -1,0 +1,530 @@
+{
+  "Elixir.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/4/43/Elixir.png/revision/latest?cb=20180110233824",
+    "width": 67,
+    "height": 76,
+    "mime": "image/png"
+  },
+  "Gold.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/1/10/Gold.png/revision/latest?cb=20180110234054",
+    "width": 73,
+    "height": 74,
+    "mime": "image/png"
+  },
+  "Gem.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/a/aa/Gem.png/revision/latest?cb=20171212061908",
+    "width": 65,
+    "height": 81,
+    "mime": "image/png"
+  },
+  "Trophy.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/c/cd/Trophy.png/revision/latest?cb=20171031024226",
+    "width": 74,
+    "height": 78,
+    "mime": "image/png"
+  },
+  "Shield.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/c/cf/Shield.png/revision/latest?cb=20151223062526",
+    "width": 191,
+    "height": 208,
+    "mime": "image/png"
+  },
+  "Dark Elixir.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/4/4e/Dark_Elixir.png/revision/latest?cb=20180110233856",
+    "width": 67,
+    "height": 76,
+    "mime": "image/png"
+  },
+  "Legend League.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/0/0b/Legend_League.png/revision/latest?cb=20171003010714",
+    "width": 135,
+    "height": 139,
+    "mime": "image/png"
+  },
+  "Titan League.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/e/e5/Titan_League.png/revision/latest?cb=20171003010915",
+    "width": 137,
+    "height": 136,
+    "mime": "image/png"
+  },
+  "Clash Royale Logo.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/6/6c/Clash_Royale_Logo.png/revision/latest?cb=20181220222401",
+    "width": 750,
+    "height": 195,
+    "mime": "image/png"
+  },
+  "Strongman.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/f/fe/Strongman.png/revision/latest?cb=20251226225535",
+    "width": 267,
+    "height": 341,
+    "mime": "image/png"
+  },
+  "Strongman info.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/8/8a/Strongman_info.png/revision/latest?cb=20251226224136",
+    "width": 1294,
+    "height": 1906,
+    "mime": "image/png"
+  },
+  "Resource Potion.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/2/2e/Resource_Potion.png/revision/latest?cb=20171220185413",
+    "width": 193,
+    "height": 254,
+    "mime": "image/png"
+  },
+  "Power Potion.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/0/06/Power_Potion.png/revision/latest?cb=20171220185445",
+    "width": 193,
+    "height": 254,
+    "mime": "image/png"
+  },
+  "Rune of Builder Elixir.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/9/9d/Rune_of_Builder_Elixir.png/revision/latest?cb=20181103130420",
+    "width": 181,
+    "height": 219,
+    "mime": "image/png"
+  },
+  "Rune of Builder Gold.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/b/bf/Rune_of_Builder_Gold.png/revision/latest?cb=20181103130439",
+    "width": 180,
+    "height": 221,
+    "mime": "image/png"
+  },
+  "Builder Potion.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/1/1c/Builder_Potion.png/revision/latest?cb=20180302001711",
+    "width": 193,
+    "height": 254,
+    "mime": "image/png"
+  },
+  "Strongman1.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/1/12/Strongman1.png/revision/latest?cb=20180306070608",
+    "width": 74,
+    "height": 85,
+    "mime": "image/png"
+  },
+  "Clock Tower Potion.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/a/a1/Clock_Tower_Potion.png/revision/latest?cb=20181023122737",
+    "width": 193,
+    "height": 254,
+    "mime": "image/png"
+  },
+  "Hammer of Fighting.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/2/25/Hammer_of_Fighting.png/revision/latest?cb=20181023123644",
+    "width": 164,
+    "height": 212,
+    "mime": "image/png"
+  },
+  "Hammer of Building.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/6/6b/Hammer_of_Building.png/revision/latest?cb=20181023123704",
+    "width": 164,
+    "height": 212,
+    "mime": "image/png"
+  },
+  "Hammer of Spells.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/e/ed/Hammer_of_Spells.png/revision/latest?cb=20181023123725",
+    "width": 164,
+    "height": 212,
+    "mime": "image/png"
+  },
+  "Hammer of Heroes.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/b/b5/Hammer_of_Heroes.png/revision/latest?cb=20181023123750",
+    "width": 164,
+    "height": 212,
+    "mime": "image/png"
+  },
+  "LeagueMedal.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/9/97/LeagueMedal.png/revision/latest?cb=20181023140411",
+    "width": 267,
+    "height": 198,
+    "mime": "image/png"
+  },
+  "War League Main Banner.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/c/c0/War_League_Main_Banner.png/revision/latest?cb=20181023145516",
+    "width": 595,
+    "height": 448,
+    "mime": "image/png"
+  },
+  "Hero Potion.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/e/e6/Hero_Potion.png/revision/latest?cb=20231212233134",
+    "width": 190,
+    "height": 251,
+    "mime": "image/png"
+  },
+  "Season Challenges.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/8/8c/Season_Challenges.png/revision/latest?cb=20190326022118",
+    "width": 375,
+    "height": 416,
+    "mime": "image/png"
+  },
+  "Research Potion.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/4/4e/Research_Potion.png/revision/latest?cb=20190618175319",
+    "width": 193,
+    "height": 254,
+    "mime": "image/png"
+  },
+  "Super Potion.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/8/8f/Super_Potion.png/revision/latest?cb=20201124091115",
+    "width": 193,
+    "height": 254,
+    "mime": "image/png"
+  },
+  "Builder.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/1/14/Builder.png/revision/latest?cb=20210413073645",
+    "width": 61,
+    "height": 77,
+    "mime": "image/png"
+  },
+  "Raid Medal.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/5/52/Raid_Medal.png/revision/latest?cb=20220505230502",
+    "width": 130,
+    "height": 127,
+    "mime": "image/png"
+  },
+  "Unknown Potion 1.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/2/2a/Unknown_Potion_1.png/revision/latest?cb=20220902154302",
+    "width": 99,
+    "height": 127,
+    "mime": "image/png"
+  },
+  "Unknown Potion 2.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/9/99/Unknown_Potion_2.png/revision/latest?cb=20220902154320",
+    "width": 96,
+    "height": 127,
+    "mime": "image/png"
+  },
+  "Unknown Potion 3.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/4/47/Unknown_Potion_3.png/revision/latest?cb=20220902154332",
+    "width": 96,
+    "height": 127,
+    "mime": "image/png"
+  },
+  "Builder Star Jar.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/f/f6/Builder_Star_Jar.png/revision/latest?cb=20230612133523",
+    "width": 375,
+    "height": 461,
+    "mime": "image/png"
+  },
+  "Pet Potion.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/7/73/Pet_Potion.png/revision/latest?cb=20230612133524",
+    "width": 193,
+    "height": 254,
+    "mime": "image/png"
+  },
+  "Unknown Potion 4.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/1/10/Unknown_Potion_4.png/revision/latest?cb=20250418140138",
+    "width": 555,
+    "height": 691,
+    "mime": "image/png"
+  },
+  "Legend Trophy.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/f/fa/Legend_Trophy.png/revision/latest?cb=20260626191039",
+    "width": 118,
+    "height": 129,
+    "mime": "image/png"
+  },
+  "Builder info.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/4/4d/Builder_info.png/revision/latest?cb=20260119120901",
+    "width": 418,
+    "height": 459,
+    "mime": "image/png"
+  },
+  "Resting Builder.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/2/26/Resting_Builder.png/revision/latest?cb=20171106182918",
+    "width": 73,
+    "height": 48,
+    "mime": "image/png"
+  },
+  "Unranked League.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/c/c0/Unranked_League.png/revision/latest?cb=20171003011534",
+    "width": 110,
+    "height": 114,
+    "mime": "image/png"
+  },
+  "Master Builder info.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/7/76/Master_Builder_info.png/revision/latest?cb=20251223201151",
+    "width": 243,
+    "height": 342,
+    "mime": "image/png"
+  },
+  "MasterBuilder Boat.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/0/04/MasterBuilder_Boat.png/revision/latest?cb=20170529034340",
+    "width": 201,
+    "height": 152,
+    "mime": "image/png"
+  },
+  "MasterBuilder1.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/0/04/MasterBuilder1.png/revision/latest?cb=20170529034341",
+    "width": 78,
+    "height": 73,
+    "mime": "image/png"
+  },
+  "Master Builder intro.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/b/b9/Master_Builder_intro.png/revision/latest?cb=20170529043736",
+    "width": 1185,
+    "height": 802,
+    "mime": "image/png"
+  },
+  "BarbBuilder.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/0/01/BarbBuilder.png/revision/latest?cb=20170805112554",
+    "width": 44,
+    "height": 60,
+    "mime": "image/png"
+  },
+  "GiantBuilder.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/6/61/GiantBuilder.png/revision/latest?cb=20170811073322",
+    "width": 52,
+    "height": 62,
+    "mime": "image/png"
+  },
+  "WitchBuilder.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/9/97/WitchBuilder.png/revision/latest?cb=20170818104622",
+    "width": 50,
+    "height": 55,
+    "mime": "image/png"
+  },
+  "WizBuilder.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/8/86/WizBuilder.png/revision/latest?cb=20170825152410",
+    "width": 50,
+    "height": 60,
+    "mime": "image/png"
+  },
+  "Builders Hut.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/1/10/Builders_Hut.png/revision/latest?cb=20171106183136",
+    "width": 101,
+    "height": 128,
+    "mime": "image/png"
+  },
+  "Brawl Stars Logo.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/0/01/Brawl_Stars_Logo.png/revision/latest?cb=20181220222339",
+    "width": 500,
+    "height": 130,
+    "mime": "image/png"
+  },
+  "BattleBuilder.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/4/43/BattleBuilder.png/revision/latest?cb=20210413073644",
+    "width": 61,
+    "height": 77,
+    "mime": "image/png"
+  },
+  "TrophyC.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/2/2d/TrophyC.png/revision/latest?cb=20221213093839",
+    "width": 72,
+    "height": 96,
+    "mime": "image/png"
+  },
+  "Builder Hall10.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/8/87/Builder_Hall10.png/revision/latest?cb=20230516070454",
+    "width": 320,
+    "height": 320,
+    "mime": "image/png"
+  },
+  "League King Icon.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/0/0d/League_King_Icon.png/revision/latest?cb=20230617020454",
+    "width": 166,
+    "height": 166,
+    "mime": "image/png"
+  },
+  "League Queen Icon.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/2/2b/League_Queen_Icon.png/revision/latest?cb=20230617021402",
+    "width": 166,
+    "height": 166,
+    "mime": "image/png"
+  },
+  "League Champion Icon.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/6/6d/League_Champion_Icon.png/revision/latest?cb=20230621045309",
+    "width": 166,
+    "height": 166,
+    "mime": "image/png"
+  },
+  "League Warden Icon.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/d/d9/League_Warden_Icon.png/revision/latest?cb=20230617030016",
+    "width": 166,
+    "height": 166,
+    "mime": "image/png"
+  },
+  "Perk Builder Boost.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/4/4b/Perk_Builder_Boost.png/revision/latest?cb=20260301175100",
+    "width": 720,
+    "height": 814,
+    "mime": "image/png"
+  },
+  "Builder Smiling.jpg": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/a/a4/Builder_Smiling.jpg/revision/latest?cb=20231011145304",
+    "width": 2220,
+    "height": 700,
+    "mime": "image/jpeg"
+  },
+  "Builder 3D.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/e/e2/Builder_3D.png/revision/latest?cb=20251119134206",
+    "width": 232,
+    "height": 226,
+    "mime": "image/png"
+  },
+  "Builder info2.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/c/c5/Builder_info2.png/revision/latest?cb=20260718023236",
+    "width": 800,
+    "height": 861,
+    "mime": "image/png"
+  },
+  "Builder info old.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/1/14/Builder_info_old.png/revision/latest?cb=20260110204428",
+    "width": 438,
+    "height": 426,
+    "mime": "image/png"
+  },
+  "Builder info3.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/3/35/Builder_info3.png/revision/latest?cb=20260119115708",
+    "width": 596,
+    "height": 429,
+    "mime": "image/png"
+  },
+  "Builder info4.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/4/4a/Builder_info4.png/revision/latest?cb=20260119115722",
+    "width": 760,
+    "height": 850,
+    "mime": "image/png"
+  },
+  "GoldPassActivated.mp3": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/e/e8/GoldPassActivated.mp3/revision/latest?cb=20260220013958",
+    "width": 0,
+    "height": 0,
+    "mime": "audio/mpeg"
+  },
+  "ChallengesIcon BuildingUpgrade.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/c/c0/ChallengesIcon_BuildingUpgrade.png/revision/latest?cb=20260220113901",
+    "width": 720,
+    "height": 720,
+    "mime": "image/png"
+  },
+  "ChallengesIcon TroopUpgrade.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/9/90/ChallengesIcon_TroopUpgrade.png/revision/latest?cb=20260220113926",
+    "width": 720,
+    "height": 720,
+    "mime": "image/png"
+  },
+  "ChallengesIcon HeroPetUpgrade.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/b/b2/ChallengesIcon_HeroPetUpgrade.png/revision/latest?cb=20260220114002",
+    "width": 720,
+    "height": 720,
+    "mime": "image/png"
+  },
+  "ChallengesIcon DonateReinforcements.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/9/99/ChallengesIcon_DonateReinforcements.png/revision/latest?cb=20260220114044",
+    "width": 720,
+    "height": 720,
+    "mime": "image/png"
+  },
+  "ChallengesIcon StarBonus.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/b/b0/ChallengesIcon_StarBonus.png/revision/latest?cb=20260220114116",
+    "width": 720,
+    "height": 720,
+    "mime": "image/png"
+  },
+  "ChallengesIcon WinBattle.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/f/fb/ChallengesIcon_WinBattle.png/revision/latest?cb=20260220114144",
+    "width": 720,
+    "height": 720,
+    "mime": "image/png"
+  },
+  "ChallengesIcon DestroyTownHall.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/5/59/ChallengesIcon_DestroyTownHall.png/revision/latest?cb=20260220114210",
+    "width": 720,
+    "height": 720,
+    "mime": "image/png"
+  },
+  "ChallengesIcon RequestReinforcements.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/4/48/ChallengesIcon_RequestReinforcements.png/revision/latest?cb=20260220114302",
+    "width": 720,
+    "height": 720,
+    "mime": "image/png"
+  },
+  "MaintenanceBuilder.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/2/20/MaintenanceBuilder.png/revision/latest?cb=20260223221713",
+    "width": 1024,
+    "height": 1024,
+    "mime": "image/png"
+  },
+  "Builder info5.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/8/82/Builder_info5.png/revision/latest?cb=20260725124435",
+    "width": 2833,
+    "height": 2239,
+    "mime": "image/png"
+  },
+  "League Prince Icon.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/0/0b/League_Prince_Icon.png/revision/latest?cb=20261014155532",
+    "width": 166,
+    "height": 166,
+    "mime": "image/png"
+  },
+  "Builder info6.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/c/c0/Builder_info6.png/revision/latest?cb=20261027182043",
+    "width": 349,
+    "height": 628,
+    "mime": "image/png"
+  },
+  "Broken MasterBuilder boat.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/8/84/Broken_MasterBuilder_boat.png/revision/latest?cb=20170529034341",
+    "width": 165,
+    "height": 151,
+    "mime": "image/png"
+  },
+  "MasterBuilder2.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/4/4b/MasterBuilder2.png/revision/latest?cb=20170529034342",
+    "width": 62,
+    "height": 58,
+    "mime": "image/png"
+  },
+  "Trader Setup.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/1/1e/Trader_Setup.png/revision/latest?cb=20180305180529",
+    "width": 296,
+    "height": 258,
+    "mime": "image/png"
+  },
+  "File:Trader Setup.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/1/1e/Trader_Setup.png/revision/latest?cb=20180305180529",
+    "width": 296,
+    "height": 258,
+    "mime": "image/png"
+  },
+  "Trader info.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/3/31/Trader_info.png/revision/latest?cb=20260623001333",
+    "width": 2372,
+    "height": 2905,
+    "mime": "image/png"
+  },
+  "File:Trader info.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/3/31/Trader_info.png/revision/latest?cb=20260623001333",
+    "width": 2372,
+    "height": 2905,
+    "mime": "image/png"
+  },
+  "Trader Default.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/2/21/Trader_Default.png/revision/latest?cb=20250125184148",
+    "width": 182,
+    "height": 135,
+    "mime": "image/png"
+  },
+  "File:Trader Default.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/2/21/Trader_Default.png/revision/latest?cb=20250125184148",
+    "width": 182,
+    "height": 135,
+    "mime": "image/png"
+  },
+  "Trader_info.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/3/31/Trader_info.png/revision/latest?cb=20260623001333",
+    "width": 2372,
+    "height": 2905,
+    "mime": "image/png"
+  },
+  "Trader.png": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/3/31/Trader_info.png/revision/latest?cb=20260623001333",
+    "width": 2372,
+    "height": 2905,
+    "mime": "image/png"
+  },
+  "Trader": {
+    "url": "https://static.wikia.nocookie.net/clashofclans/images/3/31/Trader_info.png/revision/latest?cb=20260623001333",
+    "width": 2372,
+    "height": 2905,
+    "mime": "image/png"
+  }
+}
