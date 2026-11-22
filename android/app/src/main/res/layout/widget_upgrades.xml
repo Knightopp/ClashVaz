@@ -31,7 +31,7 @@
                 android:id="@+id/widget_player_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Chief ClashMaster"
+                android:text="VazoClash"
                 android:textColor="#FFFFFF"
                 android:textSize="13sp"
                 android:textStyle="bold" />
@@ -40,7 +40,7 @@
                 android:id="@+id/widget_village_sub"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Town Hall 18 • 91% (125/142)"
+                android:text="Sync village to view upgrades"
                 android:textColor="#A1A1AA"
                 android:textSize="10sp" />
         </LinearLayout>
@@ -55,7 +55,7 @@
             android:paddingTop="2dp"
             android:paddingEnd="6dp"
             android:paddingBottom="2dp"
-            android:text="TH18"
+            android:text="Vazo"
             android:textColor="#FFFFFF"
             android:textSize="10sp"
             android:textStyle="bold" />
@@ -91,7 +91,7 @@
         android:text="@string/widget_empty"
         android:textColor="#71717A"
         android:textSize="11sp"
-        android:visibility="gone" />
+        android:visibility="visible" />
 
     <!-- Active Upgrade Row 1 -->
     <LinearLayout
@@ -101,7 +101,7 @@
         android:layout_marginBottom="4dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:visibility="visible">
+        android:visibility="gone">
 
         <ImageView
             android:layout_width="14dp"
@@ -117,7 +117,7 @@
             android:layout_weight="1"
             android:ellipsize="end"
             android:maxLines="1"
-            android:text="Cannon Lv 13 → Lv 14"
+            android:text=""
             android:textColor="#FFFFFF"
             android:textSize="11sp"
             android:textStyle="bold" />
@@ -131,7 +131,7 @@
             android:paddingTop="2dp"
             android:paddingEnd="8dp"
             android:paddingBottom="2dp"
-            android:text="17h 50m"
+            android:text=""
             android:textColor="#FFFFFF"
             android:textSize="10sp"
             android:textStyle="bold" />
@@ -145,7 +145,7 @@
         android:layout_marginBottom="4dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:visibility="visible">
+        android:visibility="gone">
 
         <ImageView
             android:layout_width="14dp"
@@ -161,7 +161,7 @@
             android:layout_weight="1"
             android:ellipsize="end"
             android:maxLines="1"
-            android:text="Spell Tower Lv 6 → Lv 7"
+            android:text=""
             android:textColor="#FFFFFF"
             android:textSize="11sp"
             android:textStyle="bold" />
@@ -175,7 +175,7 @@
             android:paddingTop="2dp"
             android:paddingEnd="8dp"
             android:paddingBottom="2dp"
-            android:text="19h 29m"
+            android:text=""
             android:textColor="#FFFFFF"
             android:textSize="10sp"
             android:textStyle="bold" />
@@ -189,7 +189,7 @@
         android:layout_marginBottom="4dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:visibility="visible">
+        android:visibility="gone">
 
         <ImageView
             android:layout_width="14dp"
@@ -205,7 +205,7 @@
             android:layout_weight="1"
             android:ellipsize="end"
             android:maxLines="1"
-            android:text="Multi-Archer Tower Lv 3 → Lv 4"
+            android:text=""
             android:textColor="#FFFFFF"
             android:textSize="11sp"
             android:textStyle="bold" />
@@ -219,7 +219,7 @@
             android:paddingTop="2dp"
             android:paddingEnd="8dp"
             android:paddingBottom="2dp"
-            android:text="9h 30m"
+            android:text=""
             android:textColor="#FFFFFF"
             android:textSize="10sp"
             android:textStyle="bold" />
@@ -232,7 +232,7 @@
         android:layout_height="28dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:visibility="visible">
+        android:visibility="gone">
 
         <ImageView
             android:layout_width="14dp"
@@ -248,7 +248,7 @@
             android:layout_weight="1"
             android:ellipsize="end"
             android:maxLines="1"
-            android:text="Cannon Lv 13 → Lv 14"
+            android:text=""
             android:textColor="#FFFFFF"
             android:textSize="11sp"
             android:textStyle="bold" />
@@ -262,7 +262,7 @@
             android:paddingTop="2dp"
             android:paddingEnd="8dp"
             android:paddingBottom="2dp"
-            android:text="23h 1m"
+            android:text=""
             android:textColor="#FFFFFF"
             android:textSize="10sp"
             android:textStyle="bold" />
@@ -275,7 +275,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
         android:gravity="center"
-        android:text="+3 more upgrades • Tap to open VazoClash"
+        android:text="Tap to open VazoClash"
         android:textColor="#71717A"
         android:textSize="9sp" />
 

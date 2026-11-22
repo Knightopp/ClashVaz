@@ -188,9 +188,43 @@ public class MainActivity extends AppCompatActivity {
         if (lower.contains("minion_prince")) return "downloads/images/Heroes/minion_prince.webp";
         if (lower.contains("dragon_duke")) return "downloads/images/Heroes/dragon_duke.webp";
 
+        if (lower.contains("troops/")) {
+            String sub = lower.substring(lower.indexOf("troops/") + 7);
+            if (sub.contains("/")) sub = sub.substring(0, sub.indexOf("/"));
+            if (sub.contains(".")) sub = sub.substring(0, sub.indexOf("."));
+            sub = sub.replace("-", "_");
+            String candidate = "downloads/images/troops/" + sub + ".webp";
+            try {
+                getAssets().open(candidate).close();
+                return candidate;
+            } catch (Exception ignored) {}
+        }
+        if (lower.contains("pets/")) {
+            String sub = lower.substring(lower.indexOf("pets/") + 5);
+            if (sub.contains("/")) sub = sub.substring(0, sub.indexOf("/"));
+            if (sub.contains(".")) sub = sub.substring(0, sub.indexOf("."));
+            sub = sub.replace("-", "_");
+            String candidate = "downloads/images/pets/" + sub + ".webp";
+            try {
+                getAssets().open(candidate).close();
+                return candidate;
+            } catch (Exception ignored) {}
+        }
+        if (lower.contains("spells/")) {
+            String sub = lower.substring(lower.indexOf("spells/") + 7);
+            if (sub.contains("/")) sub = sub.substring(0, sub.indexOf("/"));
+            if (sub.contains(".")) sub = sub.substring(0, sub.indexOf("."));
+            sub = sub.replace("-", "_");
+            String candidate = "downloads/images/spells/" + sub + ".webp";
+            try {
+                getAssets().open(candidate).close();
+                return candidate;
+            } catch (Exception ignored) {}
+        }
+
         if (lower.contains("shield.png")) return "downloads/images/ui/shield.png";
         if (lower.contains("trophy.png")) return "downloads/images/ui/trophy.png";
-        if (lower.contains("hammer_of_building")) return "downloads/images/ui/hammer_building.png";
+        if (lower.contains("hammer_of_building") || lower.contains("hammer_building")) return "downloads/images/ui/hammer_building.png";
         if (lower.contains("builder.png")) return "downloads/images/ui/builder.png";
         if (lower.contains("leaguemedal")) return "downloads/images/ui/league_medal.png";
         if (lower.contains("raid_medal")) return "downloads/images/ui/raid_medal.png";
@@ -250,9 +284,9 @@ public class MainActivity extends AppCompatActivity {
                     } catch (Exception e) {
                         Log.e("VazoClash", "Error proxying image online: " + targetUrl);
                     }
-                    // Offline fallback: serve cannon level 1 instead of empty image
+                    // Offline fallback: serve ui challenge upgrade icon instead of cannon
                     try {
-                        InputStream is = am.open("downloads/images/Cannon_Home_Village/level-1.png");
+                        InputStream is = am.open("downloads/images/ui/challenge_upgrade.png");
                         return new WebResourceResponse("image/png", null, is);
                     } catch (Exception ignored) {}
                 }

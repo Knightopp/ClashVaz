@@ -60,7 +60,11 @@ public class VillageDataStore {
             SharedPreferences prefs = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
             SharedPreferences.Editor editor = prefs.edit();
 
-            if (obj.has("playerName")) editor.putString(KEY_PLAYER_NAME, obj.optString("playerName", "Chief ClashMaster"));
+            if (obj.has("playerName")) {
+                editor.putString(KEY_PLAYER_NAME, obj.optString("playerName", "Chief ClashMaster"));
+            } else if (obj.has("name")) {
+                editor.putString(KEY_PLAYER_NAME, obj.optString("name", "Chief ClashMaster"));
+            }
             if (obj.has("tag")) editor.putString(KEY_TAG, obj.optString("tag", "#LU8QU99L0"));
             if (obj.has("townHallLevel")) editor.putInt(KEY_TH_LEVEL, obj.optInt("townHallLevel", 18));
             if (obj.has("completionPercentage")) editor.putInt(KEY_PROGRESS_PERCENT, obj.optInt("completionPercentage", 91));
@@ -72,12 +76,14 @@ public class VillageDataStore {
                 for (int i = 0; i < arr.length(); i++) {
                     JSONObject u = arr.getJSONObject(i);
                     JSONObject item = new JSONObject();
-                    item.put("name", u.optString("name", "Building"));
+                    String uName = u.optString("name", "Building");
+                    item.put("name", uName);
                     item.put("currentLevel", u.optInt("currentLevel", 1));
                     item.put("targetLevel", u.optInt("targetLevel", 2));
-                    long sec = u.optLong("timerSeconds", u.optLong("durationSeconds", u.optLong("timer", 86400)));
+                    long sec = u.optLong("timerSeconds", u.optLong("durationSeconds", u.optLong("timer", 0)));
                     item.put("timerSeconds", sec);
-                    item.put("finishTimestampMs", System.currentTimeMillis() + (sec * 1000));
+                    long finishTs = u.optLong("upgradeEndTimestamp", System.currentTimeMillis() + (sec * 1000));
+                    item.put("finishTimestampMs", finishTs);
                     storedArr.put(item);
                 }
                 editor.putString(KEY_UPGRADES_JSON, storedArr.toString());
@@ -135,17 +141,6 @@ public class VillageDataStore {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        }
-
-        // Return authentic default upgrades if empty
-        if (list.isEmpty()) {
-            list.add(new UpgradeItem("Cannon", 13, 14, 64200));            // 17h 50m
-            list.add(new UpgradeItem("Spell Tower", 6, 7, 70140));         // 19h 29m
-            list.add(new UpgradeItem("Multi-Archer Tower", 3, 4, 34200));   // 9h 30m
-            list.add(new UpgradeItem("Cannon", 13, 14, 82860));            // 23h 1m
-            list.add(new UpgradeItem("Cannon", 13, 14, 115200));           // 1d 8h
-            list.add(new UpgradeItem("Spell Tower", 6, 7, 144000));        // 1d 16h
-            list.add(new UpgradeItem("Multi-Archer Tower", 3, 4, 46860));   // 13h 1m
         }
 
         return list;
