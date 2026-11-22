@@ -36,91 +36,97 @@ public class UpgradesWidgetProvider extends AppWidgetProvider {
     }
 
     public static void updateAppWidget(Context context, AppWidgetManager appWidgetManager, int appWidgetId) {
-        RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.widget_upgrades);
+        try {
+            RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.widget_upgrades);
 
-        String playerName = VillageDataStore.getPlayerName(context);
-        int thLevel = VillageDataStore.getTownHallLevel(context);
-        int progress = VillageDataStore.getProgressPercent(context);
-        int totalBuildings = VillageDataStore.getTotalBuildings(context);
+            String playerName = VillageDataStore.getPlayerName(context);
+            int thLevel = VillageDataStore.getTownHallLevel(context);
+            int progress = VillageDataStore.getProgressPercent(context);
+            int totalBuildings = VillageDataStore.getTotalBuildings(context);
 
-        views.setTextViewText(R.id.widget_player_name, playerName);
-        views.setTextViewText(R.id.widget_village_sub, "Town Hall " + thLevel + " • " + progress + "% (" + totalBuildings + "/142)");
-        views.setTextViewText(R.id.widget_th_badge, "TH" + thLevel);
+            views.setTextViewText(R.id.widget_player_name, playerName);
+            views.setTextViewText(R.id.widget_village_sub, "Town Hall " + thLevel + " • " + progress + "% (" + totalBuildings + "/142)");
+            views.setTextViewText(R.id.widget_th_badge, "TH" + thLevel);
 
-        List<VillageDataStore.UpgradeItem> upgrades = VillageDataStore.getActiveUpgrades(context);
+            List<VillageDataStore.UpgradeItem> upgrades = VillageDataStore.getActiveUpgrades(context);
 
-        if (upgrades.isEmpty()) {
-            views.setViewVisibility(R.id.widget_empty_text, View.VISIBLE);
-            views.setViewVisibility(R.id.upgrade_row_1, View.GONE);
-            views.setViewVisibility(R.id.upgrade_row_2, View.GONE);
-            views.setViewVisibility(R.id.upgrade_row_3, View.GONE);
-            views.setViewVisibility(R.id.upgrade_row_4, View.GONE);
-            views.setViewVisibility(R.id.widget_footer_text, View.GONE);
-        } else {
-            views.setViewVisibility(R.id.widget_empty_text, View.GONE);
-
-            // Row 1
-            if (upgrades.size() > 0) {
-                views.setViewVisibility(R.id.upgrade_row_1, View.VISIBLE);
-                views.setTextViewText(R.id.upgrade_title_1, upgrades.get(0).getDisplayTitle());
-                views.setTextViewText(R.id.upgrade_timer_1, upgrades.get(0).getFormattedRemainingTime());
-            } else {
+            if (upgrades.isEmpty()) {
+                views.setViewVisibility(R.id.widget_empty_text, View.VISIBLE);
+                views.setTextViewText(R.id.widget_empty_text, "All Builders Free! Village Running Smoothly");
                 views.setViewVisibility(R.id.upgrade_row_1, View.GONE);
-            }
-
-            // Row 2
-            if (upgrades.size() > 1) {
-                views.setViewVisibility(R.id.upgrade_row_2, View.VISIBLE);
-                views.setTextViewText(R.id.upgrade_title_2, upgrades.get(1).getDisplayTitle());
-                views.setTextViewText(R.id.upgrade_timer_2, upgrades.get(1).getFormattedRemainingTime());
-            } else {
                 views.setViewVisibility(R.id.upgrade_row_2, View.GONE);
-            }
-
-            // Row 3
-            if (upgrades.size() > 2) {
-                views.setViewVisibility(R.id.upgrade_row_3, View.VISIBLE);
-                views.setTextViewText(R.id.upgrade_title_3, upgrades.get(2).getDisplayTitle());
-                views.setTextViewText(R.id.upgrade_timer_3, upgrades.get(2).getFormattedRemainingTime());
-            } else {
                 views.setViewVisibility(R.id.upgrade_row_3, View.GONE);
-            }
-
-            // Row 4
-            if (upgrades.size() > 3) {
-                views.setViewVisibility(R.id.upgrade_row_4, View.VISIBLE);
-                views.setTextViewText(R.id.upgrade_title_4, upgrades.get(3).getDisplayTitle());
-                views.setTextViewText(R.id.upgrade_timer_4, upgrades.get(3).getFormattedRemainingTime());
-            } else {
                 views.setViewVisibility(R.id.upgrade_row_4, View.GONE);
-            }
-
-            int extra = upgrades.size() - 4;
-            if (extra > 0) {
                 views.setViewVisibility(R.id.widget_footer_text, View.VISIBLE);
-                views.setTextViewText(R.id.widget_footer_text, "+" + extra + " more upgrades • Tap to open VazoClash");
-            } else {
                 views.setTextViewText(R.id.widget_footer_text, "Tap to open VazoClash");
+            } else {
+                views.setViewVisibility(R.id.widget_empty_text, View.GONE);
+
+                // Row 1
+                if (upgrades.size() > 0) {
+                    views.setViewVisibility(R.id.upgrade_row_1, View.VISIBLE);
+                    views.setTextViewText(R.id.upgrade_title_1, upgrades.get(0).getDisplayTitle());
+                    views.setTextViewText(R.id.upgrade_timer_1, upgrades.get(0).getFormattedRemainingTime());
+                } else {
+                    views.setViewVisibility(R.id.upgrade_row_1, View.GONE);
+                }
+
+                // Row 2
+                if (upgrades.size() > 1) {
+                    views.setViewVisibility(R.id.upgrade_row_2, View.VISIBLE);
+                    views.setTextViewText(R.id.upgrade_title_2, upgrades.get(1).getDisplayTitle());
+                    views.setTextViewText(R.id.upgrade_timer_2, upgrades.get(1).getFormattedRemainingTime());
+                } else {
+                    views.setViewVisibility(R.id.upgrade_row_2, View.GONE);
+                }
+
+                // Row 3
+                if (upgrades.size() > 2) {
+                    views.setViewVisibility(R.id.upgrade_row_3, View.VISIBLE);
+                    views.setTextViewText(R.id.upgrade_title_3, upgrades.get(2).getDisplayTitle());
+                    views.setTextViewText(R.id.upgrade_timer_3, upgrades.get(2).getFormattedRemainingTime());
+                } else {
+                    views.setViewVisibility(R.id.upgrade_row_3, View.GONE);
+                }
+
+                // Row 4
+                if (upgrades.size() > 3) {
+                    views.setViewVisibility(R.id.upgrade_row_4, View.VISIBLE);
+                    views.setTextViewText(R.id.upgrade_title_4, upgrades.get(3).getDisplayTitle());
+                    views.setTextViewText(R.id.upgrade_timer_4, upgrades.get(3).getFormattedRemainingTime());
+                } else {
+                    views.setViewVisibility(R.id.upgrade_row_4, View.GONE);
+                }
+
+                int extra = upgrades.size() - 4;
+                views.setViewVisibility(R.id.widget_footer_text, View.VISIBLE);
+                if (extra > 0) {
+                    views.setTextViewText(R.id.widget_footer_text, "+" + extra + " more upgrades • Tap to open VazoClash");
+                } else {
+                    views.setTextViewText(R.id.widget_footer_text, "Tap to open VazoClash");
+                }
             }
+
+            // Tap entire widget -> open app directly to upgrades view
+            Intent launchIntent = new Intent(context, MainActivity.class);
+            launchIntent.putExtra("target_view", "upgrades");
+            launchIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            PendingIntent pendingLaunch = PendingIntent.getActivity(
+                    context, 0, launchIntent, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE
+            );
+            views.setOnClickPendingIntent(R.id.widget_root, pendingLaunch);
+
+            // Tap refresh button -> broadcast refresh intent
+            Intent refreshIntent = new Intent(context, UpgradesWidgetProvider.class);
+            refreshIntent.setAction(ACTION_REFRESH_WIDGET);
+            PendingIntent pendingRefresh = PendingIntent.getBroadcast(
+                    context, 1, refreshIntent, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE
+            );
+            views.setOnClickPendingIntent(R.id.widget_btn_refresh, pendingRefresh);
+
+            appWidgetManager.updateAppWidget(appWidgetId, views);
+        } catch (Throwable t) {
+            android.util.Log.e("UpgradesWidget", "Failed updating app widget ID " + appWidgetId, t);
         }
-
-        // Tap entire widget -> open app directly to upgrades view
-        Intent launchIntent = new Intent(context, MainActivity.class);
-        launchIntent.putExtra("target_view", "upgrades");
-        launchIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        PendingIntent pendingLaunch = PendingIntent.getActivity(
-                context, 0, launchIntent, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE
-        );
-        views.setOnClickPendingIntent(R.id.widget_root, pendingLaunch);
-
-        // Tap refresh button -> broadcast refresh intent
-        Intent refreshIntent = new Intent(context, UpgradesWidgetProvider.class);
-        refreshIntent.setAction(ACTION_REFRESH_WIDGET);
-        PendingIntent pendingRefresh = PendingIntent.getBroadcast(
-                context, 1, refreshIntent, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE
-        );
-        views.setOnClickPendingIntent(R.id.widget_btn_refresh, pendingRefresh);
-
-        appWidgetManager.updateAppWidget(appWidgetId, views);
     }
 }

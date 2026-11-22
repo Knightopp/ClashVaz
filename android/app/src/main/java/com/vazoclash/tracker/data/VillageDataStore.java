@@ -75,7 +75,7 @@ public class VillageDataStore {
                     item.put("name", u.optString("name", "Building"));
                     item.put("currentLevel", u.optInt("currentLevel", 1));
                     item.put("targetLevel", u.optInt("targetLevel", 2));
-                    long sec = u.optLong("timerSeconds", 86400);
+                    long sec = u.optLong("timerSeconds", u.optLong("durationSeconds", u.optLong("timer", 86400)));
                     item.put("timerSeconds", sec);
                     item.put("finishTimestampMs", System.currentTimeMillis() + (sec * 1000));
                     storedArr.put(item);

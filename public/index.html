@@ -24,6 +24,14 @@
       padding: 0;
     }
 
+    html, body {
+      overflow-x: hidden !important;
+      max-width: 100% !important;
+      width: 100% !important;
+      box-sizing: border-box;
+      touch-action: pan-y;
+    }
+
     body {
       background: #09090b;
       color: #ffffff;
@@ -32,7 +40,8 @@
       font-weight: 700;
       line-height: 1.4;
       height: 100vh;
-      overflow: hidden;
+      overflow-y: hidden;
+      overflow-x: hidden !important;
       user-select: none;
       -webkit-font-smoothing: antialiased;
     }
@@ -504,6 +513,10 @@
       gap: 8px;
       position: relative;
       overflow: hidden;
+      max-width: 100% !important;
+      width: 100% !important;
+      min-width: 0 !important;
+      box-sizing: border-box;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
     }
 
@@ -522,8 +535,12 @@
     }
 
     .timeline-scroll-wrap {
-      width: 100%;
-      overflow-x: auto;
+      width: 100% !important;
+      max-width: 100% !important;
+      min-width: 0 !important;
+      overflow-x: auto !important;
+      -webkit-overflow-scrolling: touch;
+      box-sizing: border-box;
       padding-bottom: 2px;
     }
 
@@ -3119,20 +3136,27 @@
     }
 
     @media (max-width: 900px) {
-      body {
-        overflow: auto;
+      html, body {
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
         height: auto;
         min-height: 100vh;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
       }
 
       .app-frame {
         flex-direction: column;
-        width: 100vw;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
         height: auto;
         min-height: 100vh;
         padding: 0;
         gap: 0;
-        overflow: visible;
+        overflow-x: hidden !important;
+        box-sizing: border-box;
       }
 
       .left-sidebar {
@@ -3152,8 +3176,13 @@
       }
 
       .center-content {
-        width: 100%;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
         padding: 12px 12px 76px 12px;
+        overflow-x: hidden !important;
+        box-sizing: border-box;
+      }
         overflow: visible;
       }
 
@@ -3316,10 +3345,10 @@
         <span>VazoClash</span>
       </div>
       <div class="mobile-header-actions">
-        <div class="mobile-profile-chip" onclick="switchNav('upgrades')">
-          <img src="/downloads/images/Town_Hall/Town_Hall18.png" class="mobile-chip-avatar" alt="TH">
+        <div class="mobile-profile-chip" onclick="openAccountsModal()" title="Switch Account">
+          <img src="/downloads/images/Town_Hall/Town_Hall18.png" class="mobile-chip-avatar" id="mobile-chip-avatar-img" alt="TH">
           <div class="mobile-chip-info">
-            <span class="mobile-chip-th" id="mobile-chip-th">TH18</span>
+            <span class="mobile-chip-th" id="mobile-chip-th">Main TH18</span>
             <span class="mobile-chip-prog" id="mobile-chip-prog">91%</span>
           </div>
         </div>
@@ -4161,10 +4190,13 @@
             Import or reset your active Clash of Clans village layout, upgrade timers, and building roster.
           </p>
           <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-            <button class="flat-action-btn" style="margin: 0; padding: 8px 14px; font-size: 12px;" onclick="closeSettingsModal(); openImportModal();">
+            <button class="flat-action-btn" style="margin: 0; padding: 8px 14px; font-size: 12px; background: #ffffff; color: #000000;" onclick="closeSettingsModal(); openAccountsModal();">
+              <span>Manage Village Accounts</span>
+            </button>
+            <button class="flat-action-btn" style="margin: 0; padding: 8px 14px; font-size: 12px; background: #27272a; color: #ffffff;" onclick="closeSettingsModal(); openImportModal();">
               <span>Import Village JSON</span>
             </button>
-            <button class="flat-action-btn" style="margin: 0; padding: 8px 14px; font-size: 12px; background: #27272a;" onclick="resetToDefaultVillage()">
+            <button class="flat-action-btn" style="margin: 0; padding: 8px 14px; font-size: 12px; background: #27272a; color: #ffffff;" onclick="resetToDefaultVillage()">
               <span>Reset to Default TH18 Village</span>
             </button>
           </div>
@@ -4185,6 +4217,8 @@
 
       <div class="import-modal-body">
         <div>
+          <label style="font-family:'Lilita One',cursive; font-size:12px; color:#a1a1aa; margin-bottom:6px; display:block;">Custom Account Name (Optional):</label>
+          <input type="text" id="import-account-name-input" placeholder="Custom name e.g. Abhi Main TH18, Mini TH16..." style="width:100%; box-sizing:border-box; background:#09090b; border:1px solid #27272a; border-radius:8px; padding:8px 12px; color:#ffffff; font-size:12px; margin-bottom:10px; outline:none;" />
           <label style="font-family:'Lilita One',cursive; font-size:12px; color:#a1a1aa; margin-bottom:6px; display:block;">Paste Clash of Clans JSON Export:</label>
           <textarea id="import-json-textarea" class="import-textarea" placeholder="Paste full export JSON here (includes tag, timestamp, buildings, traps, heroes, upgrade timers)..." oninput="onImportInputChanged()"></textarea>
         </div>
@@ -4248,6 +4282,50 @@
         <button class="flat-action-btn" id="btn-commit-import" style="margin:0;" onclick="commitVillageImport()">
           <span>Apply Import</span>
         </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Village Accounts Switcher & Manager Modal -->
+  <div class="import-modal-overlay" id="accounts-modal" style="display: none;">
+    <div class="import-modal-card" style="max-width: 520px; width: 95vw; box-sizing: border-box;">
+      <div class="import-modal-header">
+        <div class="import-modal-title">
+          <img src="/downloads/images/ui/shield.png" style="width: 20px; height: 20px;" alt="Accounts">
+          <span>Village Accounts</span>
+        </div>
+        <button class="modal-close-btn" onclick="closeAccountsModal()">&times;</button>
+      </div>
+
+      <div class="import-modal-body" style="display: flex; flex-direction: column; gap: 14px; max-height: 75vh; overflow-y: auto;">
+        <p style="font-size: 11px; color: #a1a1aa; margin: 0; line-height: 1.5;">
+          Switch between your Clash of Clans villages, customize names, or add a new account. Active upgrades automatically sync to your Android widget.
+        </p>
+
+        <!-- Saved Accounts List -->
+        <div id="accounts-list-container" style="display: flex; flex-direction: column; gap: 10px;">
+          <!-- Populated dynamically via renderAccountsList() -->
+        </div>
+
+        <!-- Add New Account Section -->
+        <div style="background: #141416; border: 1px solid #27272a; border-radius: 14px; padding: 14px; margin-top: 4px;">
+          <div style="font-size: 13px; font-weight: 800; color: #ffffff; margin-bottom: 10px;">
+            <span>Add New Account</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <input type="text" id="new-account-name-input" placeholder="Custom Account Name (e.g. Mini TH16, War Base)..." style="width:100%; box-sizing:border-box; background:#09090b; border:1px solid #27272a; border-radius:8px; padding:8px 12px; color:#ffffff; font-size:12px; outline:none;" />
+            <textarea id="new-account-json-input" placeholder="Paste Clash of Clans JSON export here..." style="width:100%; box-sizing:border-box; background:#09090b; border:1px solid #27272a; border-radius:8px; padding:8px 12px; color:#ffffff; font-size:11px; height:80px; resize:vertical; outline:none; font-family:monospace;"></textarea>
+            <div style="display:flex; justify-content:flex-end; gap:8px;">
+              <button class="flat-action-btn" style="margin:0; padding:7px 16px; font-size:12px;" onclick="handleAddNewAccountFromForm()">
+                <span>Save & Switch to Account</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="import-modal-footer">
+        <button class="flat-action-btn" style="margin:0; background:#18181b; color:#ffffff; border:1px solid #27272a;" onclick="closeAccountsModal()">Close</button>
       </div>
     </div>
   </div>
@@ -4520,15 +4598,8 @@
           thImageMap = Object.assign({}, window.DEFAULT_TH_IMAGES);
         }
         allBuildings = Array.isArray(dataJson) ? dataJson : (dataJson.buildings || []);
-        const savedLocalProfile = localStorage.getItem('vazoclash_village_profile');
-        if (savedLocalProfile) {
-          try {
-            currentVillageProfile = JSON.parse(savedLocalProfile);
-          } catch(e) {}
-        }
-        if (!currentVillageProfile) {
-          currentVillageProfile = villageData.currentProfile || (villageData.villageName ? villageData : null);
-        }
+        // Initialize Multi-Account Village Management
+        initAccountsSystem(villageData);
         villageSnapshots = villageData.snapshots || [];
 
         const has18 = allProgressions.some(p => p.townHall === 18);
@@ -5574,11 +5645,13 @@
       if (!currentVillageProfile) return;
       const profile = currentVillageProfile;
       const upgrades = profile.activeUpgrades || [];
+      const activeAcc = typeof getActiveAccount === 'function' ? getActiveAccount() : null;
+      const displayName = activeAcc?.name || profile.playerName || 'Chief ClashMaster';
 
       // Desktop Profile
       const playerNameEl = document.querySelector('.profile-name-wrap h2');
-      if (playerNameEl && profile.playerName) {
-        playerNameEl.textContent = profile.playerName;
+      if (playerNameEl) {
+        playerNameEl.textContent = displayName;
       }
       const playerTagEl = document.getElementById('player-profile-subtitle');
       if (playerTagEl && profile.tag) {
@@ -5632,7 +5705,9 @@
 
       // Mobile Top Bar Chips
       const chipTh = document.getElementById('mobile-chip-th');
-      if (chipTh) chipTh.textContent = `TH${profile.townHallLevel}`;
+      if (chipTh) chipTh.textContent = displayName;
+      const chipAvatar = document.getElementById('mobile-chip-avatar-img');
+      if (chipAvatar) chipAvatar.src = '/downloads/images/Town_Hall/Town_Hall' + (profile.townHallLevel || 18) + '.png';
       const chipProg = document.getElementById('mobile-chip-prog');
       if (chipProg) chipProg.textContent = `${profile.completionPercentage || 91}%`;
       const mobBadge = document.getElementById('mobile-upgrades-badge');
@@ -6062,77 +6137,385 @@
       location.reload();
     }
 
+    window.COC_ENTITY_MAP = {"1000000":"Army Camp","1000001":"Town Hall","1000002":"Elixir Collector","1000003":"Elixir Storage","1000004":"Gold Mine","1000005":"Gold Storage","1000006":"Barracks","1000007":"Laboratory","1000008":"Cannon","1000009":"Archer Tower","1000010":"Wall","1000011":"Wizard Tower","1000012":"Air Defense","1000013":"Mortar","1000014":"Clan Castle","1000015":"Builder's Hut","1000019":"Hidden Tesla","1000020":"Spell Factory","1000021":"X-Bow","1000023":"Dark Elixir Drill","1000024":"Dark Elixir Storage","1000026":"Dark Barracks","1000027":"Inferno Tower","1000028":"Air Sweeper","1000029":"Dark Spell Factory","1000031":"Eagle Artillery","1000032":"Bomb Tower","1000033":"Wall","1000034":"Builder Hall","1000035":"Elixir Collector","1000036":"Elixir Storage","1000037":"Gold Mine","1000038":"Gold Storage","1000039":"Clock Tower","1000040":"Builder Barracks","1000041":"Double Cannon","1000042":"Army Camp","1000043":"Hidden Tesla","1000044":"Cannon","1000045":"Multi Mortar","1000046":"Star Laboratory","1000047":"B.O.T.O’s Shack","1000048":"Archer Tower","1000049":"Reinforcement Camp","1000050":"Firecrackers","1000051":"Guard Post","1000052":"Mega Tesla","1000053":"Battle Machine","1000054":"Air Bombs","1000055":"Crusher","1000056":"Roaster","1000057":"Giant Cannon","1000058":"Gem Mine","1000059":"Workshop","1000063":"Lava Launcher","1000064":"B.O.B's Hut","1000065":"B.O.B Control","1000067":"Scattershot","1000068":"Pet House","1000070":"Blacksmith","1000071":"Hero Hall","1000072":"Spell Tower","1000077":"Monolith","1000078":"O.T.T.O's Outpost","1000079":"Multi-Gear Tower","1000080":"Battle Copter","1000081":"X-Bow","1000082":"Healing Hut","1000084":"Multi-Archer Tower","1000085":"Ricochet Cannon","1000086":"Revenge Tower","1000089":"Firespitter","1000093":"Helper Hut","1000097":"Crafting Station","1000102":"Super Wizard Tower","1000105":"Guardian Shrine","1000106":"Squad Barracks","1000107":"Spiky Tower","1000108":"Firecracker Tower","4000000":"Barbarian","4000001":"Archer","4000002":"Goblin","4000003":"Giant","4000004":"Wall Breaker","4000005":"Balloon","4000006":"Wizard","4000007":"Healer","4000008":"Dragon","4000009":"P.E.K.K.A","4000010":"Minion","4000011":"Hog Rider","4000012":"Valkyrie","4000013":"Golem","4000015":"Witch","4000017":"Lava Hound","4000022":"Bowler","4000023":"Baby Dragon","4000024":"Miner","4000026":"Super Barbarian","4000027":"Super Archer","4000028":"Super Wall Breaker","4000029":"Super Giant","4000030":"Ice Wizard","4000031":"Raged Barbarian","4000032":"Sneaky Archer","4000033":"Beta Minion","4000034":"Boxer Giant","4000035":"Bomber","4000036":"Power P.E.K.K.A","4000037":"Cannon Cart","4000038":"Drop Ship","4000041":"Baby Dragon","4000042":"Night Witch","4000045":"Battle Ram","4000047":"Royal Ghost","4000048":"Pumpkin Barbarian","4000050":"Giant Skeleton","4000051":"Wall Wrecker","4000052":"Battle Blimp","4000053":"Yeti","4000055":"Sneaky Goblin","4000056":"Super Miner","4000057":"Rocket Balloon","4000058":"Ice Golem","4000059":"Electro Dragon","4000061":"Skeleton Barrel","4000062":"Stone Slammer","4000063":"Inferno Dragon","4000064":"Super Valkyrie","4000065":"Dragon Rider","4000066":"Super Witch","4000067":"M.E.C.H.A","4000070":"Hog Glider","4000072":"Party Wizard","4000075":"Siege Barracks","4000076":"Ice Hound","4000080":"Super Bowler","4000081":"Super Dragon","4000082":"Headhunter","4000083":"Super Wizard","4000084":"Super Minion","4000087":"Log Launcher","4000091":"Flame Flinger","4000092":"Battle Drill","4000094":"Ram Rider","4000095":"Electro Titan","4000097":"Apprentice Warden","4000098":"Super Hog Rider","4000101":"Barcher","4000102":"Witch Golem","4000103":"Hog Wizard","4000104":"Lavaloon","4000106":"Electrofire Wizard","4000109":"Ruin Witch","4000110":"Root Rider","4000118":"C.O.O.K.I.E","4000119":"Firecracker","4000120":"Azure Dragon","4000121":"Barbarian Kicker","4000122":"Giant Thrower","4000123":"Druid","4000125":"Broom Witch","4000130":"Ice Minion","4000132":"Thrower","4000135":"Troop Launcher","4000136":"Debt Collector","4000142":"Snake Barrel","4000147":"Super Yeti","4000150":"Furnace","4000156":"Giant Giant","4000157":"K.A.N.E","4000158":"The Disarmer","4000159":"YEETer","4000167":"Meteor Golem","4000177":"Meteor Golem","4000185":"Elephant Rider","4000188":"Sky Wagon","4000190":"Yeti Undertaker","4000194":"Totem Thrower","4000195":"Barch Squad","4000196":"Giant Wizard Squad","4000197":"Wall Breaker Squad","4000198":"Minion Squad","4000199":"Balloon Squad","4000200":"Golem Witch Squad","4000201":"Hog Rider Squad","4000202":"Miner Squad","4000203":"Healer Squad","4000204":"P.E.K.K.A Titan Squad","4000205":"Dragons Squad","4000206":"Baby Dragon Squad","12000000":"Bomb","12000001":"Spring Trap","12000002":"Giant Bomb","12000005":"Air Bomb","12000006":"Seeking Air Mine","12000008":"Skeleton Trap","12000010":"Spring Trap","12000011":"Push Trap","12000013":"Mine","12000014":"Mega Mine","12000016":"Tornado Trap","12000020":"Giga Bomb","26000000":"Lightning Spell","26000001":"Healing Spell","26000002":"Rage Spell","26000003":"Jump Spell","26000005":"Freeze Spell","26000006":"Santa's Surprise","26000009":"Poison Spell","26000010":"Earthquake Spell","26000011":"Haste Spell","26000016":"Clone Spell","26000017":"Skeleton Spell","26000028":"Bat Spell","26000035":"Invisibility Spell","26000053":"Recall Spell","26000070":"Overgrowth Spell","26000073":"Bag of Frostmites","26000098":"Revive Spell","26000109":"Ice Block Spell","26000120":"Totem Spell","26000123":"Angry Spell","26000153":"Heroic Spell","28000000":"Barbarian King","28000001":"Archer Queen","28000002":"Grand Warden","28000003":"Battle Machine","28000004":"Royal Champion","28000005":"Battle Copter","28000006":"Minion Prince","28000007":"Dragon Duke","73000000":"L.A.S.S.I","73000001":"Mighty Yak","73000002":"Electro Owl","73000003":"Unicorn","73000004":"Phoenix","73000007":"Poison Lizard","73000008":"Diggy","73000009":"Frosty","73000010":"Spirit Fox","73000011":"Angry Jelly","73000016":"Sneezy","73000017":"Greedy Raven"};
+
+    // ========================================================
+    // MULTI-ACCOUNT MANAGEMENT SYSTEM (Persistent Villages)
+    // ========================================================
+    const ACCOUNTS_STORAGE_KEY = 'vazoclash_accounts';
+    const ACTIVE_ACCOUNT_KEY = 'vazoclash_active_account_id';
+
+    function getSavedAccounts() {
+      try {
+        const stored = localStorage.getItem(ACCOUNTS_STORAGE_KEY);
+        if (stored) {
+          const list = JSON.parse(stored);
+          if (Array.isArray(list) && list.length > 0) return list;
+        }
+      } catch (e) {
+        console.warn('Failed reading saved accounts', e);
+      }
+      return [];
+    }
+
+    function saveAccounts(accountsList) {
+      try {
+        localStorage.setItem(ACCOUNTS_STORAGE_KEY, JSON.stringify(accountsList));
+      } catch (e) {
+        console.warn('Failed writing saved accounts', e);
+      }
+    }
+
+    function getActiveAccountId() {
+      return localStorage.getItem(ACTIVE_ACCOUNT_KEY) || null;
+    }
+
+    function getActiveAccount() {
+      const accounts = getSavedAccounts();
+      const activeId = getActiveAccountId();
+      if (activeId) {
+        const found = accounts.find(a => a.id === activeId);
+        if (found) return found;
+      }
+      return accounts.length > 0 ? accounts[0] : null;
+    }
+
+    function initAccountsSystem(initialVillageData) {
+      let accounts = getSavedAccounts();
+      const savedLocalProfile = localStorage.getItem('vazoclash_village_profile');
+      let baseProfile = null;
+
+      if (savedLocalProfile) {
+        try { baseProfile = JSON.parse(savedLocalProfile); } catch(e) {}
+      }
+      if (!baseProfile) {
+        baseProfile = initialVillageData?.currentProfile || (initialVillageData?.villageName ? initialVillageData : null);
+      }
+
+      if (accounts.length === 0 && baseProfile) {
+        const initName = baseProfile.playerName || ('Main TH' + (baseProfile.townHallLevel || 18));
+        const mainAcc = {
+          id: 'acc_main_' + Date.now(),
+          name: initName,
+          tag: baseProfile.tag || '#VILLAGE',
+          townHallLevel: baseProfile.townHallLevel || 18,
+          profile: baseProfile,
+          createdAt: new Date().toISOString()
+        };
+        accounts = [mainAcc];
+        saveAccounts(accounts);
+        localStorage.setItem(ACTIVE_ACCOUNT_KEY, mainAcc.id);
+      }
+
+      const activeAcc = getActiveAccount();
+      if (activeAcc && activeAcc.profile) {
+        currentVillageProfile = activeAcc.profile;
+        localStorage.setItem('vazoclash_village_profile', JSON.stringify(currentVillageProfile));
+        localStorage.setItem(ACTIVE_ACCOUNT_KEY, activeAcc.id);
+      } else if (baseProfile) {
+        currentVillageProfile = baseProfile;
+      }
+
+      syncWithAndroidWidget(currentVillageProfile);
+    }
+
+    function saveOrUpdateAccount(customName, profile) {
+      let accounts = getSavedAccounts();
+      const activeId = getActiveAccountId();
+      const foundIdx = accounts.findIndex(a => a.id === activeId);
+
+      const name = customName && customName.trim() ? customName.trim() : (profile.playerName || ('Village TH' + (profile.townHallLevel || 18)));
+      profile.playerName = name;
+
+      if (foundIdx >= 0) {
+        accounts[foundIdx].name = name;
+        accounts[foundIdx].tag = profile.tag || accounts[foundIdx].tag;
+        accounts[foundIdx].townHallLevel = profile.townHallLevel || accounts[foundIdx].townHallLevel;
+        accounts[foundIdx].profile = profile;
+        accounts[foundIdx].updatedAt = new Date().toISOString();
+      } else {
+        const newAcc = {
+          id: 'acc_' + Date.now(),
+          name: name,
+          tag: profile.tag || '#VILLAGE',
+          townHallLevel: profile.townHallLevel || 18,
+          profile: profile,
+          createdAt: new Date().toISOString()
+        };
+        accounts.push(newAcc);
+        localStorage.setItem(ACTIVE_ACCOUNT_KEY, newAcc.id);
+      }
+
+      saveAccounts(accounts);
+      currentVillageProfile = profile;
+      localStorage.setItem('vazoclash_village_profile', JSON.stringify(profile));
+      syncWithAndroidWidget(profile);
+    }
+
+    function switchAccount(accountId) {
+      const accounts = getSavedAccounts();
+      const target = accounts.find(a => a.id === accountId);
+      if (!target || !target.profile) {
+        alert('Could not find account to switch to.');
+        return;
+      }
+
+      currentVillageProfile = target.profile;
+      localStorage.setItem('vazoclash_village_profile', JSON.stringify(currentVillageProfile));
+      localStorage.setItem(ACTIVE_ACCOUNT_KEY, target.id);
+
+      currentTH = currentVillageProfile.townHallLevel || 18;
+      syncWithAndroidWidget(currentVillageProfile);
+
+      renderDashboard();
+      renderTownHallPills();
+      renderBuildingsExplorer();
+      renderMyVillage();
+      renderTimelineUpgrades(currentVillageProfile);
+      updateProfileDisplay();
+
+      closeAccountsModal();
+      if (window.Android && window.Android.showToast) {
+        window.Android.showToast('Switched to ' + target.name);
+      }
+    }
+
+    function renameAccountPrompt(accountId) {
+      const accounts = getSavedAccounts();
+      const target = accounts.find(a => a.id === accountId);
+      if (!target) return;
+
+      const newName = prompt('Enter new custom name for village (' + target.tag + '):', target.name);
+      if (!newName || !newName.trim()) return;
+
+      target.name = newName.trim();
+      if (target.profile) {
+        target.profile.playerName = target.name;
+      }
+      saveAccounts(accounts);
+
+      const activeId = getActiveAccountId();
+      if (activeId === accountId) {
+        currentVillageProfile.playerName = target.name;
+        localStorage.setItem('vazoclash_village_profile', JSON.stringify(currentVillageProfile));
+        syncWithAndroidWidget(currentVillageProfile);
+        updateProfileDisplay();
+      }
+
+      renderAccountsList();
+    }
+
+    function deleteAccount(accountId) {
+      let accounts = getSavedAccounts();
+      if (accounts.length <= 1) {
+        alert('You cannot delete the only remaining village account.');
+        return;
+      }
+
+      const target = accounts.find(a => a.id === accountId);
+      const name = target ? target.name : 'this account';
+      if (!confirm('Are you sure you want to delete "' + name + '"?')) return;
+
+      accounts = accounts.filter(a => a.id !== accountId);
+      saveAccounts(accounts);
+
+      const activeId = getActiveAccountId();
+      if (activeId === accountId) {
+        switchAccount(accounts[0].id);
+      } else {
+        renderAccountsList();
+      }
+    }
+
+    function openAccountsModal() {
+      const m = document.getElementById('accounts-modal');
+      if (m) {
+        m.style.display = 'flex';
+        renderAccountsList();
+      }
+    }
+
+    function closeAccountsModal() {
+      const m = document.getElementById('accounts-modal');
+      if (m) m.style.display = 'none';
+    }
+
+    function renderAccountsList() {
+      const container = document.getElementById('accounts-list-container');
+      if (!container) return;
+      container.innerHTML = '';
+
+      const accounts = getSavedAccounts();
+      const activeId = getActiveAccountId() || (accounts[0] ? accounts[0].id : null);
+
+      if (accounts.length === 0) {
+        container.innerHTML = '<div style="color:#71717a; font-size:12px; text-align:center; padding:12px;">No accounts saved. Add your first account below.</div>';
+        return;
+      }
+
+      accounts.forEach(acc => {
+        const isActive = acc.id === activeId;
+        const th = acc.profile?.townHallLevel || acc.townHallLevel || 18;
+        const tag = acc.profile?.tag || acc.tag || '#VILLAGE';
+        const upgrades = acc.profile?.activeUpgrades || [];
+        const busyBuilders = Math.min(6, upgrades.length);
+
+        const card = document.createElement('div');
+        card.style.cssText = 'background: ' + (isActive ? '#1c1c20' : '#141416') + ';' +
+          'border: 1px solid ' + (isActive ? '#ffffff' : '#27272a') + ';' +
+          'border-radius: 12px; padding: 12px 14px; display: flex; align-items: center; justify-content: space-between; gap: 12px; transition: all 0.2s ease;';
+
+        card.innerHTML = 
+          '<div style="display:flex; align-items:center; gap:10px; flex:1; min-width:0;">' +
+            '<img src="/downloads/images/Town_Hall/Town_Hall' + th + '.png" style="width:36px; height:36px; object-fit:contain; flex-shrink:0;" alt="TH" onerror="handleImgError(this)">' +
+            '<div style="flex:1; min-width:0;">' +
+              '<div style="display:flex; align-items:center; gap:8px;">' +
+                '<span style="font-family:\'Lilita One\',cursive; font-size:14px; color:#ffffff; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">' + acc.name + '</span>' +
+                (isActive ? '<span style="font-size:9px; font-weight:800; background:#ffffff; color:#000000; padding:1px 6px; border-radius:99px; text-transform:uppercase;">Active</span>' : '') +
+              '</div>' +
+              '<div style="font-size:11px; color:#a1a1aa; margin-top:2px;">' +
+                '<span>TH' + th + ' • ' + tag + ' • ' + busyBuilders + '/6 Builders Busy</span>' +
+              '</div>' +
+            '</div>' +
+          '</div>' +
+          '<div style="display:flex; align-items:center; gap:6px; flex-shrink:0;">' +
+            '<button class="flat-action-btn" style="margin:0; padding:4px 8px; font-size:11px; background:#27272a; color:#a1a1aa;" onclick="renameAccountPrompt(\'' + acc.id + '\')" title="Rename Account">' +
+              '<span>Rename</span>' +
+            '</button>' +
+            (!isActive ? 
+              '<button class="flat-action-btn" style="margin:0; padding:4px 10px; font-size:11px; background:#ffffff; color:#000000;" onclick="switchAccount(\'' + acc.id + '\')">' +
+                '<span>Switch</span>' +
+              '</button>' : '') +
+            (accounts.length > 1 ? 
+              '<button class="flat-action-btn" style="margin:0; padding:4px 8px; font-size:11px; background:#27272a; color:#ef4444;" onclick="deleteAccount(\'' + acc.id + '\')" title="Delete Account">' +
+                '<span>✕</span>' +
+              '</button>' : '') +
+          '</div>';
+        container.appendChild(card);
+      });
+    }
+
+    function handleAddNewAccountFromForm() {
+      const nameInput = document.getElementById('new-account-name-input');
+      const jsonInput = document.getElementById('new-account-json-input');
+
+      const name = nameInput ? nameInput.value.trim() : '';
+      const text = jsonInput ? jsonInput.value.trim() : '';
+
+      if (!text) {
+        alert('Please paste the Clash of Clans JSON export for the new account.');
+        return;
+      }
+
+      try {
+        const parsed = JSON.parse(text);
+        const profile = parseVillageExportClientSide(parsed);
+        if (!profile) {
+          alert('Could not parse village data from the provided JSON.');
+          return;
+        }
+
+        const finalName = name || profile.playerName || ('Village TH' + (profile.townHallLevel || 18));
+        profile.playerName = finalName;
+
+        let accounts = getSavedAccounts();
+        const newAcc = {
+          id: 'acc_' + Date.now(),
+          name: finalName,
+          tag: profile.tag || '#VILLAGE',
+          townHallLevel: profile.townHallLevel || 18,
+          profile: profile,
+          createdAt: new Date().toISOString()
+        };
+        accounts.push(newAcc);
+        saveAccounts(accounts);
+
+        // Switch to newly added account immediately
+        switchAccount(newAcc.id);
+
+        if (nameInput) nameInput.value = '';
+        if (jsonInput) jsonInput.value = '';
+      } catch (e) {
+        alert('Invalid JSON: ' + e.message);
+      }
+    }
+
+    // ========================================================
+    // CLIENT-SIDE VILLAGE EXPORT & UPGRADE PARSER
+    // ========================================================
     function parseVillageExportClientSide(raw) {
       if (!raw) return null;
       let obj = typeof raw === 'string' ? JSON.parse(raw) : raw;
       if (obj.currentProfile) obj = obj.currentProfile;
 
-      if (obj.buildings && Array.isArray(obj.buildings) && (obj.townHallLevel || obj.tag)) {
-        return {
-          tag: obj.tag || '#VILLAGE',
-          playerName: obj.playerName || 'Chief ClashMaster',
-          townHallLevel: Number(obj.townHallLevel) || 18,
-          importedAt: new Date().toISOString(),
-          timestamp: Math.floor(Date.now() / 1000),
-          totalBuildings: obj.totalBuildings || obj.buildings.length,
-          totalTraps: obj.totalTraps || 0,
-          totalHeroes: obj.totalHeroes || 6,
-          totalWalls: obj.totalWalls || 325,
-          buildings: obj.buildings,
-          activeUpgrades: obj.activeUpgrades || [],
-          raw: obj
-        };
-      }
+      const tag = obj.tag || '#IMPORTED';
+      let thLevel = Number(obj.townHallLevel || obj.townHall || obj.th || 0);
 
       const bldgsList = obj.buildings || obj.structures || obj.layout || [];
-      let thLevel = Number(obj.townHallLevel || obj.townHall || obj.th || 18);
+      const heroesList = obj.heroes || [];
+      const unitsList = obj.units || [];
+      const spellsList = obj.spells || [];
+      const petsList = obj.pets || [];
+      const equipmentList = obj.equipment || [];
+
       let activeUpgrades = [];
       let totalBuildings = 0;
       let totalTraps = 0;
       let totalWalls = 0;
-
       const mappedBuildings = [];
+
+      function resolveEntityName(id, defaultName) {
+        if (window.COC_ENTITY_MAP && window.COC_ENTITY_MAP[id]) return window.COC_ENTITY_MAP[id];
+        const sId = String(id);
+        if (window.COC_ENTITY_MAP && window.COC_ENTITY_MAP[sId]) return window.COC_ENTITY_MAP[sId];
+        return defaultName;
+      }
+
+      // 1. Parse Buildings
       if (Array.isArray(bldgsList)) {
         bldgsList.forEach((b, idx) => {
           const rawId = b.data || b.id || b.buildingId || 0;
           const lvl = b.lvl !== undefined ? b.lvl : (b.level !== undefined ? b.level : 1);
-          const name = b.name || (rawId === 1000001 ? 'Town Hall' : (b.buildingId || `Building ${idx+1}`));
+          let name = b.name || resolveEntityName(rawId, (rawId === 1000001 ? 'Town Hall' : ('Building ' + (idx+1))));
 
           if (rawId === 1000001 || (name && name.toLowerCase().includes('town hall'))) {
+            name = 'Town Hall';
             thLevel = Math.max(thLevel, Number(lvl));
           }
 
           if (name && name.toLowerCase().includes('wall')) {
-            totalWalls++;
+            totalWalls += (b.cnt || 1);
           } else if (name && (name.toLowerCase().includes('bomb') || name.toLowerCase().includes('trap') || name.toLowerCase().includes('mine'))) {
-            totalTraps++;
+            totalTraps += (b.cnt || 1);
           } else {
-            totalBuildings++;
+            totalBuildings += (b.cnt || 1);
           }
 
           if (b.timer || b.upgradeEndTimestamp || b.remainingTime) {
-            const timerSec = b.timer || b.remainingTime || 86400;
+            const timerSec = Number(b.timer || b.remainingTime || 86400);
             const endTs = b.upgradeEndTimestamp || (Date.now() + timerSec * 1000);
             activeUpgrades.push({
-              instanceId: b.instanceId || `upg_${idx}`,
+              instanceId: b.instanceId || ('upg_bldg_' + idx),
               buildingId: b.buildingId || String(rawId),
               name: name,
               category: b.category || 'Defense',
               currentLevel: Number(lvl),
               targetLevel: Number(lvl) + 1,
+              timerSeconds: timerSec,
               durationSeconds: timerSec,
               upgradeEndTimestamp: endTs,
-              image: b.image || { url: `/downloads/images/Town_Hall/Town_Hall${thLevel}.png` }
+              type: 'builder',
+              image: b.image || { url: '/downloads/images/Town_Hall/Town_Hall' + (thLevel || 18) + '.png' }
             });
           }
 
           mappedBuildings.push({
-            instanceId: b.instanceId || `bldg_${idx}`,
+            instanceId: b.instanceId || ('bldg_' + idx),
             buildingId: b.buildingId || String(rawId),
             name: name,
             category: b.category || 'Defense',
             level: Number(lvl),
-            quantity: 1,
+            quantity: b.cnt || 1,
             footprint: b.footprint || { width: 3, height: 3 },
             image: b.image || null,
             raw: b
@@ -6140,18 +6523,128 @@
         });
       }
 
+      if (!thLevel || thLevel < 1) thLevel = 18;
+
+      // 2. Parse Heroes (Extract levels and active upgrade timers)
+      const mappedHeroes = [];
+      const HERO_ID_MAP = {
+        28000000: 'Barbarian King',
+        28000001: 'Archer Queen',
+        28000002: 'Grand Warden',
+        28000004: 'Royal Champion',
+        28000006: 'Minion Prince',
+        28000007: 'Dragon Duke'
+      };
+
+      if (Array.isArray(heroesList) && heroesList.length > 0) {
+        heroesList.forEach((h, idx) => {
+          const rawId = h.data || h.id || 0;
+          const hName = h.name || HERO_ID_MAP[rawId] || resolveEntityName(rawId, ('Hero ' + (idx+1)));
+          const lvl = h.lvl !== undefined ? h.lvl : (h.level !== undefined ? h.level : 1);
+
+          mappedHeroes.push({
+            data: rawId,
+            id: rawId,
+            name: hName,
+            lvl: Number(lvl),
+            level: Number(lvl),
+            timer: h.timer || 0
+          });
+
+          if (h.timer && Number(h.timer) > 0) {
+            const timerSec = Number(h.timer);
+            activeUpgrades.push({
+              instanceId: 'upg_hero_' + idx,
+              buildingId: String(rawId),
+              name: hName + ' (Hero)',
+              category: 'Hero',
+              currentLevel: Number(lvl),
+              targetLevel: Number(lvl) + 1,
+              timerSeconds: timerSec,
+              durationSeconds: timerSec,
+              upgradeEndTimestamp: Date.now() + timerSec * 1000,
+              type: 'builder',
+              image: { url: '/downloads/images/Heroes/' + hName.toLowerCase().replace(/\s+/g, '_') + '.webp' }
+            });
+          }
+        });
+      } else if (Array.isArray(obj.rawHeroes)) {
+        mappedHeroes.push(...obj.rawHeroes);
+      }
+
+      // 3. Parse Units & Spells (Laboratory Upgrades)
+      [...(Array.isArray(unitsList) ? unitsList : []), ...(Array.isArray(spellsList) ? spellsList : [])].forEach((u, idx) => {
+        if (u.timer && Number(u.timer) > 0) {
+          const rawId = u.data || u.id || 0;
+          const uName = u.name || resolveEntityName(rawId, ('Lab Item ' + (idx+1)));
+          const lvl = u.lvl !== undefined ? u.lvl : (u.level !== undefined ? u.level : 1);
+          const timerSec = Number(u.timer);
+          activeUpgrades.push({
+            instanceId: 'upg_lab_' + idx,
+            buildingId: String(rawId),
+            name: uName + ' (Laboratory)',
+            category: 'Lab',
+            currentLevel: Number(lvl),
+            targetLevel: Number(lvl) + 1,
+            timerSeconds: timerSec,
+            durationSeconds: timerSec,
+            upgradeEndTimestamp: Date.now() + timerSec * 1000,
+            type: 'lab'
+          });
+        }
+      });
+
+      // 4. Parse Pets (Pet House Upgrades)
+      if (Array.isArray(petsList)) {
+        petsList.forEach((p, idx) => {
+          if (p.timer && Number(p.timer) > 0) {
+            const rawId = p.data || p.id || 0;
+            const pName = p.name || resolveEntityName(rawId, ('Pet ' + (idx+1)));
+            const lvl = p.lvl !== undefined ? p.lvl : (p.level !== undefined ? p.level : 1);
+            const timerSec = Number(p.timer);
+            activeUpgrades.push({
+              instanceId: 'upg_pet_' + idx,
+              buildingId: String(rawId),
+              name: pName + ' (Pet House)',
+              category: 'Pet',
+              currentLevel: Number(lvl),
+              targetLevel: Number(lvl) + 1,
+              timerSeconds: timerSec,
+              durationSeconds: timerSec,
+              upgradeEndTimestamp: Date.now() + timerSec * 1000,
+              type: 'pet'
+            });
+          }
+        });
+      }
+
+      // Sort active upgrades by remaining timer (shortest first)
+      activeUpgrades.sort((a, b) => (a.timerSeconds || 0) - (b.timerSeconds || 0));
+
+      if (activeUpgrades.length === 0 && Array.isArray(obj.activeUpgrades) && obj.activeUpgrades.length > 0) {
+        activeUpgrades = obj.activeUpgrades;
+      }
+
+      const playerName = obj.playerName || obj.name || 'Chief ClashMaster';
+
       return {
-        tag: obj.tag || '#IMPORTED',
-        playerName: obj.playerName || obj.name || 'Chief ClashMaster',
+        tag: tag,
+        playerName: playerName,
         townHallLevel: thLevel,
         importedAt: new Date().toISOString(),
-        timestamp: Math.floor(Date.now() / 1000),
+        timestamp: obj.timestamp || Math.floor(Date.now() / 1000),
         totalBuildings: totalBuildings || mappedBuildings.length,
         totalTraps: totalTraps,
-        totalHeroes: 6,
+        totalHeroes: mappedHeroes.length || 6,
         totalWalls: totalWalls || 325,
-        buildings: mappedBuildings,
-        activeUpgrades: activeUpgrades.length > 0 ? activeUpgrades : (obj.activeUpgrades || []),
+        completionPercentage: obj.completionPercentage || 91,
+        buildings: mappedBuildings.length > 0 ? mappedBuildings : (obj.buildings || []),
+        heroes: mappedHeroes.length > 0 ? mappedHeroes : (obj.heroes || []),
+        units: unitsList,
+        spells: spellsList,
+        pets: petsList,
+        equipment: equipmentList,
+        activeUpgrades: activeUpgrades,
         raw: obj
       };
     }
@@ -6279,12 +6772,10 @@
         }
 
         if (profile) {
-          currentVillageProfile = profile;
-          localStorage.setItem('vazoclash_village_profile', JSON.stringify(profile));
-
-          if (window.Android && window.Android.syncUpgradesToWidget) {
-            window.Android.syncUpgradesToWidget(JSON.stringify(profile));
-          }
+          const nameInput = document.getElementById('import-account-name-input');
+          const customName = nameInput && nameInput.value.trim() ? nameInput.value.trim() : (profile.playerName || ('Village TH' + (profile.townHallLevel || 18)));
+          
+          saveOrUpdateAccount(customName, profile);
 
           currentTH = currentVillageProfile.townHallLevel || 18;
           renderDashboard();
@@ -6299,7 +6790,7 @@
           }
 
           closeImportModal();
-          alert(`Successfully imported village ${profile.tag || 'Chief'} (TH${currentTH}, ${profile.totalBuildings || 0} structures)!`);
+          alert('Successfully imported village ' + customName + ' (' + (profile.tag || '#VILLAGE') + ', TH' + currentTH + ')!');
         } else {
           alert('Import failed: Could not construct valid village profile from provided JSON.');
         }

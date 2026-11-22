@@ -72,13 +72,14 @@
             android:contentDescription="Refresh" />
     </LinearLayout>
 
-    <!-- Divider -->
-    <View
+    <!-- Divider (Using ImageView for strict RemoteViews compatibility) -->
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:background="#27272A" />
+        android:background="#27272A"
+        android:contentDescription="Divider" />
 
     <!-- Empty State -->
     <TextView
@@ -115,7 +116,7 @@
             android:layout_marginStart="6dp"
             android:layout_weight="1"
             android:ellipsize="end"
-            android:singleLine="true"
+            android:maxLines="1"
             android:text="Cannon Lv 13 → Lv 14"
             android:textColor="#FFFFFF"
             android:textSize="11sp"
@@ -159,7 +160,7 @@
             android:layout_marginStart="6dp"
             android:layout_weight="1"
             android:ellipsize="end"
-            android:singleLine="true"
+            android:maxLines="1"
             android:text="Spell Tower Lv 6 → Lv 7"
             android:textColor="#FFFFFF"
             android:textSize="11sp"
@@ -203,7 +204,7 @@
             android:layout_marginStart="6dp"
             android:layout_weight="1"
             android:ellipsize="end"
-            android:singleLine="true"
+            android:maxLines="1"
             android:text="Multi-Archer Tower Lv 3 → Lv 4"
             android:textColor="#FFFFFF"
             android:textSize="11sp"
@@ -246,7 +247,7 @@
             android:layout_marginStart="6dp"
             android:layout_weight="1"
             android:ellipsize="end"
-            android:singleLine="true"
+            android:maxLines="1"
             android:text="Cannon Lv 13 → Lv 14"
             android:textColor="#FFFFFF"
             android:textSize="11sp"
