@@ -1,5 +1,7 @@
 package com.vazoclash.tracker;
 
+import android.appwidget.AppWidgetManager;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
@@ -29,6 +31,31 @@ public class AndroidBridge {
             context.sendBroadcast(intent);
         } catch (Exception e) {
             e.printStackTrace();
+        }
+    }
+
+    @JavascriptInterface
+    public boolean isWidgetPinningSupported() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            AppWidgetManager manager = AppWidgetManager.getInstance(context);
+            return manager != null && manager.isRequestPinAppWidgetSupported();
+        }
+        return false;
+    }
+
+    @JavascriptInterface
+    public void requestPinWidget() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            AppWidgetManager manager = AppWidgetManager.getInstance(context);
+            if (manager != null && manager.isRequestPinAppWidgetSupported()) {
+                ComponentName provider = new ComponentName(context, UpgradesWidgetProvider.class);
+                manager.requestPinAppWidget(provider, null, null);
+                Toast.makeText(context, "Adding VazoClash widget to Home Screen...", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(context, "Direct pinning not supported by launcher. Long-press home screen to add VazoClash widget.", Toast.LENGTH_LONG).show();
+            }
+        } else {
+            Toast.makeText(context, "Long-press home screen to add VazoClash widget.", Toast.LENGTH_LONG).show();
         }
     }
 

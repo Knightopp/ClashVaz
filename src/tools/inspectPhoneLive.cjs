@@ -2,10 +2,9 @@ const { execSync } = require('child_process');
 
 async function test() {
   const adb = `${process.env.LOCALAPPDATA}\\Android\\Sdk\\platform-tools\\adb.exe`;
-  const pid = execSync(`"${adb}" shell pidof com.vazoclash.tracker`).toString().trim();
+  const pid = execSync(`"${adb}" -s 0G64C311262002F7 shell pidof com.vazoclash.tracker`).toString().trim();
   console.log('PID:', pid);
-  execSync(`"${adb}" forward tcp:9222 localabstract:webview_devtools_remote_${pid}`);
-  console.log('Port 9222 forwarded');
+  execSync(`"${adb}" -s 0G64C311262002F7 forward tcp:9222 localabstract:webview_devtools_remote_${pid}`);
 
   const listRes = await fetch('http://localhost:9222/json/list');
   const tabs = await listRes.json();
@@ -29,39 +28,32 @@ async function test() {
     });
   }
 
-  const state = await evalCode(`
-    (async () => {
+  const res = await evalCode(`
+    (() => {
+      const banner = document.getElementById('banner-th-img');
+      const heroes = Array.from(document.querySelectorAll('.hero-card')).map(card => {
+        const name = card.querySelector('.hero-name')?.textContent;
+        const img = card.querySelector('.hero-avatar-img')?.src;
+        const naturalWidth = card.querySelector('.hero-avatar-img')?.naturalWidth;
+        return { name, img, naturalWidth };
+      });
+
       return {
-        allProgressionsLen: (window.allProgressions || []).length,
-        allBuildingsLen: (window.allBuildings || []).length,
-        thImageMapKeys: Object.keys(window.thImageMap || {}),
-        currentTH: window.currentTH,
-        bannerSrc: document.getElementById('banner-th-img')?.src,
-        bannerNaturalWidth: document.getElementById('banner-th-img')?.naturalWidth,
-        bannerComplete: document.getElementById('banner-th-img')?.complete,
-        heroesGridHtml: document.getElementById('village-heroes-grid')?.innerHTML?.trim(),
-        heroCardsCount: document.querySelectorAll('.hero-card')?.length,
-        progTiersCount: document.getElementById('th-progression-tiers-container')?.children?.length
+        allProgressionsLength: allProgressions.length,
+        allBuildingsLength: allBuildings.length,
+        thImageMapCount: Object.keys(thImageMap).length,
+        banner: {
+          src: banner?.src,
+          naturalWidth: banner?.naturalWidth,
+          naturalHeight: banner?.naturalHeight,
+          complete: banner?.complete
+        },
+        heroes
       };
     })()
   `);
 
-  console.log('Phone state:', JSON.stringify(state, null, 2));
-
-  // Test proxy fetch of TH18 directly from inside webview
-  const proxyTest = await evalCode(`
-    (async () => {
-      try {
-        const url = '/api/proxy-image?url=' + encodeURIComponent('https://static.wikia.nocookie.net/clashofclans/images/7/76/Town_Hall18.png/revision/latest?cb=20251117162127');
-        const res = await fetch(url);
-        return { ok: res.ok, status: res.status, statusText: res.statusText, type: res.headers.get('content-type') };
-      } catch (e) {
-        return { error: e.message };
-      }
-    })()
-  `);
-  console.log('Proxy test from webview:', JSON.stringify(proxyTest, null, 2));
-
+  console.log('Live inspection on phone:\n', JSON.stringify(res, null, 2));
   ws.close();
 }
 test();
