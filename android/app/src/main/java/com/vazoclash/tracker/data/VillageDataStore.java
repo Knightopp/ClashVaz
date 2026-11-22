@@ -21,14 +21,36 @@ public class VillageDataStore {
         public int currentLevel;
         public int targetLevel;
         public long timerSeconds;
+        public long durationSeconds;
         public long finishTimestampMs;
+        public String imageUrl;
+        public String category;
+        public String type;
 
-        public UpgradeItem(String name, int currentLevel, int targetLevel, long timerSeconds) {
+        public UpgradeItem(String name, int currentLevel, int targetLevel, long timerSeconds, long durationSeconds, long finishTimestampMs, String imageUrl, String category, String type) {
             this.name = name;
             this.currentLevel = currentLevel;
             this.targetLevel = targetLevel;
             this.timerSeconds = timerSeconds;
-            this.finishTimestampMs = System.currentTimeMillis() + (timerSeconds * 1000);
+            this.durationSeconds = durationSeconds > 0 ? durationSeconds : (timerSeconds > 0 ? timerSeconds : 86400);
+            this.finishTimestampMs = finishTimestampMs > 0 ? finishTimestampMs : (System.currentTimeMillis() + (this.timerSeconds * 1000));
+            this.imageUrl = imageUrl != null ? imageUrl : "";
+            this.category = category != null ? category : "Defense";
+            this.type = type != null ? type : "builder";
+        }
+
+        public int getProgressPercent() {
+            long now = System.currentTimeMillis();
+            if (finishTimestampMs <= now) {
+                return 100;
+            }
+            long remainingMs = finishTimestampMs - now;
+            long totalMs = durationSeconds > 0 ? (durationSeconds * 1000) : (timerSeconds * 1000);
+            if (totalMs <= 0) return 0;
+            if (remainingMs >= totalMs) return 4;
+            long elapsedMs = totalMs - remainingMs;
+            int pct = (int) ((elapsedMs * 100) / totalMs);
+            return Math.max(4, Math.min(100, pct));
         }
 
         public String getFormattedRemainingTime() {
@@ -44,6 +66,10 @@ public class VillageDataStore {
 
         public String getDisplayTitle() {
             String cleanName = name != null ? name : "Building";
+            cleanName = cleanName.replace("(Hero)", "")
+                                 .replace("(Laboratory)", "")
+                                 .replace("(Pet House)", "")
+                                 .trim();
             if (cleanName.startsWith("Structure #")) {
                 String raw = cleanName.replace("Structure #", "").trim();
                 if ("1000000".equals(raw)) cleanName = "Cannon";
@@ -78,12 +104,33 @@ public class VillageDataStore {
                     JSONObject item = new JSONObject();
                     String uName = u.optString("name", "Building");
                     item.put("name", uName);
-                    item.put("currentLevel", u.optInt("currentLevel", 1));
-                    item.put("targetLevel", u.optInt("targetLevel", 2));
+                    int curLvl = u.optInt("currentLevel", 1);
+                    item.put("currentLevel", curLvl);
+                    int tgtLvl = u.optInt("targetLevel", curLvl + 1);
+                    item.put("targetLevel", tgtLvl);
                     long sec = u.optLong("timerSeconds", u.optLong("durationSeconds", u.optLong("timer", 0)));
                     item.put("timerSeconds", sec);
-                    long finishTs = u.optLong("upgradeEndTimestamp", System.currentTimeMillis() + (sec * 1000));
+                    long durSec = u.optLong("durationSeconds", sec > 0 ? sec : 86400);
+                    item.put("durationSeconds", durSec);
+                    long finishTs = u.optLong("upgradeEndTimestamp", u.optLong("finishTimestampMs", System.currentTimeMillis() + (sec * 1000)));
                     item.put("finishTimestampMs", finishTs);
+
+                    String imgUrl = "";
+                    if (u.has("image")) {
+                        Object imgObj = u.get("image");
+                        if (imgObj instanceof JSONObject) {
+                            imgUrl = ((JSONObject) imgObj).optString("url", "");
+                        } else if (imgObj instanceof String) {
+                            imgUrl = (String) imgObj;
+                        }
+                    }
+                    if (imgUrl.isEmpty() && u.has("imageUrl")) {
+                        imgUrl = u.optString("imageUrl", "");
+                    }
+                    item.put("imageUrl", imgUrl);
+                    item.put("category", u.optString("category", "Defense"));
+                    item.put("type", u.optString("type", "builder"));
+
                     storedArr.put(item);
                 }
                 editor.putString(KEY_UPGRADES_JSON, storedArr.toString());
@@ -129,14 +176,17 @@ public class VillageDataStore {
                 JSONArray arr = new JSONArray(json);
                 for (int i = 0; i < arr.length(); i++) {
                     JSONObject obj = arr.getJSONObject(i);
-                    UpgradeItem item = new UpgradeItem(
-                            obj.getString("name"),
-                            obj.getInt("currentLevel"),
-                            obj.getInt("targetLevel"),
-                            obj.getLong("timerSeconds")
-                    );
-                    item.finishTimestampMs = obj.optLong("finishTimestampMs", System.currentTimeMillis() + (item.timerSeconds * 1000));
-                    list.add(item);
+                    String name = obj.getString("name");
+                    int cur = obj.getInt("currentLevel");
+                    int tgt = obj.getInt("targetLevel");
+                    long timer = obj.getLong("timerSeconds");
+                    long dur = obj.optLong("durationSeconds", timer);
+                    long finish = obj.optLong("finishTimestampMs", System.currentTimeMillis() + (timer * 1000));
+                    String img = obj.optString("imageUrl", "");
+                    String cat = obj.optString("category", "Defense");
+                    String type = obj.optString("type", "builder");
+
+                    list.add(new UpgradeItem(name, cur, tgt, timer, dur, finish, img, cat, type));
                 }
             } catch (Exception e) {
                 e.printStackTrace();
